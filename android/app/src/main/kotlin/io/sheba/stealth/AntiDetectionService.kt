@@ -168,7 +168,9 @@ class AntiDetectionService : Service() {
         // The actual exclusion is done via activity flags in MainActivity
 
         // Broadcast to MainActivity to update its flags
+        // Use explicit intent targeting our package
         val intent = Intent("io.sheba.UPDATE_RECENTS_VISIBILITY").apply {
+            setPackage(packageName)
             putExtra("exclude", exclude)
         }
         sendBroadcast(intent)
