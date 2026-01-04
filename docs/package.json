@@ -1,6 +1,7 @@
 {
-  "name": "docs",
-  "version": "0.0.0",
+  "name": "fgo-sheba-docs",
+  "version": "0.1.0",
+  "description": "Documentation website for FGO Sheba - AI-powered FGO automation",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
