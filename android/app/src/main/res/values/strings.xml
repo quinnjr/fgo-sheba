@@ -56,6 +56,12 @@
     <!-- Overlay -->
     <string name="close_overlay">Close Overlay</string>
 
+    <!-- Notifications -->
+    <string name="notification_channel_name">Screen Capture</string>
+    <string name="notification_channel_description">Active screen capture session notification</string>
+    <string name="notification_title">Sheba Active</string>
+    <string name="notification_text">Screen capture is running</string>
+
     <!-- Card Types -->
     <string name="card_type_buster">Buster</string>
     <string name="card_type_arts">Arts</string>

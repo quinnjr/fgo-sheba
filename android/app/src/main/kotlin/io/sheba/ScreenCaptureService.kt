@@ -18,6 +18,7 @@ import android.util.Log
 import android.view.WindowManager
 import androidx.core.app.NotificationCompat
 import kotlinx.coroutines.*
+import kotlin.coroutines.coroutineContext
 import java.nio.ByteBuffer
 
 /**
@@ -171,7 +172,7 @@ class ScreenCaptureService : Service() {
     }
 
     private suspend fun captureLoop() {
-        while (isActive) {
+        while (coroutineContext.isActive) {
             try {
                 val image = imageReader?.acquireLatestImage()
                 image?.let {
