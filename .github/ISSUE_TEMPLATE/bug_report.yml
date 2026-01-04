@@ -1,0 +1,124 @@
+name: 🐛 Bug Report
+description: Report a bug or unexpected behavior
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this bug! Please fill out the form below.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+      placeholder: Describe the bug...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Steps to reproduce the behavior
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What you expected to happen
+      placeholder: Describe expected behavior...
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened
+      placeholder: Describe actual behavior...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: fgo-version
+    attributes:
+      label: FGO Version
+      description: Which FGO version are you using?
+      options:
+        - JP (Japan)
+        - NA (North America)
+        - KR (Korea)
+        - TW (Taiwan)
+    validations:
+      required: true
+
+  - type: input
+    id: fgo-app-version
+    attributes:
+      label: FGO App Version
+      description: The version number of the FGO app
+      placeholder: e.g., 2.78.0
+    validations:
+      required: false
+
+  - type: input
+    id: sheba-version
+    attributes:
+      label: Sheba Version
+      description: Version of Sheba you're using
+      placeholder: e.g., 0.1.0
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: Device
+      description: Your device model
+      placeholder: e.g., Samsung Galaxy S23, Pixel 8
+    validations:
+      required: true
+
+  - type: input
+    id: android-version
+    attributes:
+      label: Android Version
+      description: Your Android OS version
+      placeholder: e.g., Android 14
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Any relevant log output (if available)
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Add screenshots if applicable
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I have searched existing issues to ensure this is not a duplicate
+          required: true
+        - label: I have provided all required information above
+          required: true

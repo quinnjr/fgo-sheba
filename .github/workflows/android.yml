@@ -1,0 +1,163 @@
+name: Android CI
+
+on:
+  push:
+    branches: [main, develop]
+    paths:
+      - 'android/**'
+      - 'src/**'
+      - '.github/workflows/android.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'android/**'
+      - 'src/**'
+
+env:
+  JAVA_VERSION: '17'
+  GRADLE_OPTS: "-Dorg.gradle.daemon=false -Dorg.gradle.parallel=true"
+
+jobs:
+  build:
+    name: Build APK
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          java-version: ${{ env.JAVA_VERSION }}
+          distribution: 'temurin'
+          cache: 'gradle'
+      
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-action@stable
+        with:
+          targets: aarch64-linux-android,armv7-linux-androideabi,x86_64-linux-android
+      
+      - name: Install Android NDK
+        uses: nttld/setup-ndk@v1
+        id: setup-ndk
+        with:
+          ndk-version: r26b
+          add-to-path: true
+      
+      - name: Cache Gradle packages
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
+      
+      - name: Cache Cargo
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            target
+          key: ${{ runner.os }}-cargo-android-${{ hashFiles('**/Cargo.lock') }}
+      
+      - name: Build Rust libraries
+        env:
+          ANDROID_NDK_HOME: ${{ steps.setup-ndk.outputs.ndk-path }}
+        run: |
+          cargo build --release --target aarch64-linux-android
+          cargo build --release --target armv7-linux-androideabi
+          cargo build --release --target x86_64-linux-android
+          
+          # Copy libraries to Android jniLibs
+          mkdir -p android/app/src/main/jniLibs/{arm64-v8a,armeabi-v7a,x86_64}
+          cp target/aarch64-linux-android/release/libfgo_sheba.so android/app/src/main/jniLibs/arm64-v8a/
+          cp target/armv7-linux-androideabi/release/libfgo_sheba.so android/app/src/main/jniLibs/armeabi-v7a/
+          cp target/x86_64-linux-android/release/libfgo_sheba.so android/app/src/main/jniLibs/x86_64/
+      
+      - name: Grant execute permission for gradlew
+        run: chmod +x android/gradlew
+      
+      - name: Build Debug APK
+        working-directory: android
+        run: ./gradlew assembleDebug --stacktrace
+      
+      - name: Upload Debug APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: sheba-debug-apk
+          path: android/app/build/outputs/apk/debug/*.apk
+          retention-days: 14
+
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          java-version: ${{ env.JAVA_VERSION }}
+          distribution: 'temurin'
+          cache: 'gradle'
+      
+      - name: Cache Gradle packages
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-lint-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+      
+      - name: Grant execute permission for gradlew
+        run: chmod +x android/gradlew
+      
+      - name: Run Android Lint
+        working-directory: android
+        run: ./gradlew lint --stacktrace
+      
+      - name: Upload Lint Report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lint-report
+          path: android/app/build/reports/lint-results-*.html
+
+  test:
+    name: Unit Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          java-version: ${{ env.JAVA_VERSION }}
+          distribution: 'temurin'
+          cache: 'gradle'
+      
+      - name: Cache Gradle packages
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-test-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+      
+      - name: Grant execute permission for gradlew
+        run: chmod +x android/gradlew
+      
+      - name: Run Unit Tests
+        working-directory: android
+        run: ./gradlew test --stacktrace
+      
+      - name: Upload Test Report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-report
+          path: android/app/build/reports/tests/

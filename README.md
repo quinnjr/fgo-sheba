@@ -192,7 +192,7 @@ python train_card_classifier.py
 
 ## ⚠️ Disclaimer
 
-This tool is provided for **educational and research purposes only**. 
+This tool is provided for **educational and research purposes only**.
 
 - Use at your own risk
 - The developers are not responsible for any account actions taken by game publishers

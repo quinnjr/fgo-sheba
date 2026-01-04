@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discussions
+    url: https://github.com/quinnjr/fgo-sheba/discussions
+    about: Ask questions and discuss ideas
+  - name: 📖 Documentation
+    url: https://github.com/quinnjr/fgo-sheba#readme
+    about: Read the documentation before opening an issue
