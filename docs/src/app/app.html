@@ -90,7 +90,7 @@
     </div>
   </div>
 
-  <div class="hero-scroll-indicator">
+  <div class="hero-scroll-indicator" [class.hidden]="!showScrollIndicator()">
     <span>Scroll to explore</span>
     <fa-icon [icon]="['fas', 'chevron-down']" class="scroll-arrow-icon"></fa-icon>
   </div>

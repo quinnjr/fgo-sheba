@@ -283,8 +283,8 @@
 }
 
 .hero-scroll-indicator {
-  position: absolute;
-  bottom: 3rem;
+  position: fixed;
+  bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -293,9 +293,22 @@
   gap: 0.5rem;
   color: var(--color-text-dim);
   font-size: 0.75rem;
-  animation: bounce 2s infinite;
   opacity: 0.6;
-  z-index: 0;
+  z-index: 10;
+  pointer-events: none;
+  animation: bounce-scroll 2s ease-in-out infinite;
+  transition: opacity 0.3s ease;
+}
+
+@keyframes bounce-scroll {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(8px); }
+}
+
+.hero-scroll-indicator.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 
 .scroll-arrow {

@@ -1,11 +1,11 @@
 import { Component, OnInit, signal, AfterViewInit, ElementRef, ViewChild, HostListener, OnDestroy } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { 
-  faDownload, 
-  faRobot, 
-  faEye, 
-  faShieldHalved, 
+import {
+  faDownload,
+  faRobot,
+  faEye,
+  faShieldHalved,
   faLanguage,
   faMobileScreen,
   faWrench,
@@ -24,11 +24,11 @@ import {
   faUserShield,
   faGlobe
 } from '@fortawesome/free-solid-svg-icons';
-import { 
-  faGithub, 
-  faRust, 
+import {
+  faGithub,
+  faRust,
   faAndroid,
-  faPatreon 
+  faPatreon
 } from '@fortawesome/free-brands-svg-icons';
 
 interface Particle {
@@ -54,6 +54,7 @@ export class App implements OnInit, AfterViewInit, OnDestroy {
   protected readonly activeTab = signal<'apk' | 'source'>('apk');
   protected readonly copied = signal(false);
   protected readonly isScrolled = signal(false);
+  protected readonly showScrollIndicator = signal(true);
 
   private particles: Particle[] = [];
   private animationId: number | null = null;
@@ -110,6 +111,7 @@ export class App implements OnInit, AfterViewInit, OnDestroy {
   @HostListener('window:scroll')
   onScroll(): void {
     this.isScrolled.set(window.scrollY > 50);
+    this.showScrollIndicator.set(window.scrollY < 100);
   }
 
   @HostListener('window:resize')
