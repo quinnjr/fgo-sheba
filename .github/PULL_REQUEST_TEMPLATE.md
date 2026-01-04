@@ -32,7 +32,7 @@ Fixes #
 - [ ] Tested with FGO NA
 
 **Test Device(s):**
-- Device: 
+- Device:
 - Android Version:
 
 ## Screenshots (if applicable)

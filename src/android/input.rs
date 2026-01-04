@@ -315,9 +315,9 @@ mod tests {
 
     #[test]
     fn test_input_generator() {
-        let gen = InputGenerator::new(1920, 1080);
+        let input_gen = InputGenerator::new(1920, 1080);
 
-        let action = gen.tap_attack();
+        let action = input_gen.tap_attack();
         match action {
             ShebaAction::Tap { x, y } => {
                 assert!(x > 1500); // Right side of screen
@@ -329,9 +329,9 @@ mod tests {
 
     #[test]
     fn test_card_selection_sequence() {
-        let gen = InputGenerator::new(1920, 1080);
+        let input_gen = InputGenerator::new(1920, 1080);
 
-        let actions = gen.select_cards(&[0, 1, 2]);
+        let actions = input_gen.select_cards(&[0, 1, 2]);
 
         // Should have 6 actions (3 taps + 3 waits)
         assert_eq!(actions.len(), 6);

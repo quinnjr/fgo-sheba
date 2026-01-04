@@ -22,26 +22,26 @@ jobs:
       - uses: actions/checkout@v4
         with:
           lfs: true
-      
+
       - name: Set up JDK
         uses: actions/setup-java@v4
         with:
           java-version: ${{ env.JAVA_VERSION }}
           distribution: 'temurin'
           cache: 'gradle'
-      
+
       - name: Install Rust toolchain
-        uses: dtolnay/rust-action@stable
+        uses: dtolnay/rust-action@1.85.0
         with:
           targets: aarch64-linux-android,armv7-linux-androideabi,x86_64-linux-android
-      
+
       - name: Install Android NDK
         uses: nttld/setup-ndk@v1
         id: setup-ndk
         with:
           ndk-version: r26b
           add-to-path: true
-      
+
       - name: Cache Cargo
         uses: actions/cache@v4
         with:
@@ -50,7 +50,7 @@ jobs:
             ~/.cargo/git
             target
           key: ${{ runner.os }}-cargo-release-${{ hashFiles('**/Cargo.lock') }}
-      
+
       - name: Build Rust libraries (Release)
         env:
           ANDROID_NDK_HOME: ${{ steps.setup-ndk.outputs.ndk-path }}
@@ -58,12 +58,12 @@ jobs:
           cargo build --release --target aarch64-linux-android
           cargo build --release --target armv7-linux-androideabi
           cargo build --release --target x86_64-linux-android
-          
+
           mkdir -p android/app/src/main/jniLibs/{arm64-v8a,armeabi-v7a,x86_64}
           cp target/aarch64-linux-android/release/libfgo_sheba.so android/app/src/main/jniLibs/arm64-v8a/
           cp target/armv7-linux-androideabi/release/libfgo_sheba.so android/app/src/main/jniLibs/armeabi-v7a/
           cp target/x86_64-linux-android/release/libfgo_sheba.so android/app/src/main/jniLibs/x86_64/
-      
+
       - name: Decode Keystore
         env:
           KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
@@ -71,10 +71,10 @@ jobs:
           if [ -n "$KEYSTORE_BASE64" ]; then
             echo "$KEYSTORE_BASE64" | base64 -d > android/app/release.keystore
           fi
-      
+
       - name: Grant execute permission for gradlew
         run: chmod +x android/gradlew
-      
+
       - name: Build Release APK
         working-directory: android
         env:
@@ -92,7 +92,7 @@ jobs:
           else
             ./gradlew assembleRelease --stacktrace
           fi
-      
+
       - name: Get version
         id: version
         run: |
@@ -101,7 +101,7 @@ jobs:
           else
             echo "version=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
           fi
-      
+
       - name: Rename APK
         run: |
           VERSION=${{ steps.version.outputs.version }}
@@ -109,7 +109,7 @@ jobs:
              android/app/build/outputs/apk/release/sheba-v${VERSION}.apk || \
           mv android/app/build/outputs/apk/release/app-release-unsigned.apk \
              android/app/build/outputs/apk/release/sheba-v${VERSION}-unsigned.apk || true
-      
+
       - name: Upload Release APK
         uses: actions/upload-artifact@v4
         with:
@@ -126,17 +126,17 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Download APK artifact
         uses: actions/download-artifact@v4
         with:
           name: sheba-release-apk
           path: release-apk
-      
+
       - name: Get version
         id: version
         run: echo "version=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
-      
+
       - name: Generate changelog
         id: changelog
         run: |
@@ -144,7 +144,7 @@ jobs:
           echo "" >> CHANGELOG.md
           git log --pretty=format:"- %s (%h)" $(git describe --tags --abbrev=0 HEAD^)..HEAD >> CHANGELOG.md || \
           git log --pretty=format:"- %s (%h)" -20 >> CHANGELOG.md
-      
+
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:

@@ -13,7 +13,7 @@ use crate::{get_sheba, init_sheba, ShebaAction};
 /// Initialize the Sheba automation engine
 ///
 /// Called once when the Android service starts.
-#[no_mangle]
+#[unsafe(no_mangle)]
 pub extern "system" fn Java_io_sheba_ShebaCore_init<'local>(
     mut env: JNIEnv<'local>,
     _class: JClass<'local>,
@@ -54,7 +54,7 @@ pub extern "system" fn Java_io_sheba_ShebaCore_init<'local>(
 /// Process a screen frame and get the next action
 ///
 /// Returns an action code that the Android side interprets.
-#[no_mangle]
+#[unsafe(no_mangle)]
 pub extern "system" fn Java_io_sheba_ShebaCore_processFrame<'local>(
     env: JNIEnv<'local>,
     _class: JClass<'local>,
@@ -92,7 +92,7 @@ pub extern "system" fn Java_io_sheba_ShebaCore_processFrame<'local>(
 }
 
 /// Get the current game state as JSON
-#[no_mangle]
+#[unsafe(no_mangle)]
 pub extern "system" fn Java_io_sheba_ShebaCore_getGameState<'local>(
     env: JNIEnv<'local>,
     _class: JClass<'local>,
@@ -112,7 +112,7 @@ pub extern "system" fn Java_io_sheba_ShebaCore_getGameState<'local>(
 }
 
 /// Update settings
-#[no_mangle]
+#[unsafe(no_mangle)]
 pub extern "system" fn Java_io_sheba_ShebaCore_updateSettings<'local>(
     mut env: JNIEnv<'local>,
     _class: JClass<'local>,
@@ -145,7 +145,7 @@ pub extern "system" fn Java_io_sheba_ShebaCore_updateSettings<'local>(
 }
 
 /// Pause/resume automation
-#[no_mangle]
+#[unsafe(no_mangle)]
 pub extern "system" fn Java_io_sheba_ShebaCore_setPaused<'local>(
     _env: JNIEnv<'local>,
     _class: JClass<'local>,
@@ -168,7 +168,7 @@ pub extern "system" fn Java_io_sheba_ShebaCore_setPaused<'local>(
 }
 
 /// Get the action type from an encoded action
-#[no_mangle]
+#[unsafe(no_mangle)]
 pub extern "system" fn Java_io_sheba_ShebaCore_getActionType<'local>(
     _env: JNIEnv<'local>,
     _class: JClass<'local>,
@@ -178,7 +178,7 @@ pub extern "system" fn Java_io_sheba_ShebaCore_getActionType<'local>(
 }
 
 /// Get action X coordinate
-#[no_mangle]
+#[unsafe(no_mangle)]
 pub extern "system" fn Java_io_sheba_ShebaCore_getActionX<'local>(
     _env: JNIEnv<'local>,
     _class: JClass<'local>,
@@ -188,7 +188,7 @@ pub extern "system" fn Java_io_sheba_ShebaCore_getActionX<'local>(
 }
 
 /// Get action Y coordinate
-#[no_mangle]
+#[unsafe(no_mangle)]
 pub extern "system" fn Java_io_sheba_ShebaCore_getActionY<'local>(
     _env: JNIEnv<'local>,
     _class: JClass<'local>,
@@ -198,7 +198,7 @@ pub extern "system" fn Java_io_sheba_ShebaCore_getActionY<'local>(
 }
 
 /// Get action data (duration, index, etc.)
-#[no_mangle]
+#[unsafe(no_mangle)]
 pub extern "system" fn Java_io_sheba_ShebaCore_getActionData<'local>(
     _env: JNIEnv<'local>,
     _class: JClass<'local>,

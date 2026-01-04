@@ -20,20 +20,20 @@ jobs:
         working-directory: docs
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
           cache-dependency-path: docs/package-lock.json
-      
+
       - name: Install dependencies
         run: npm ci
-      
+
       - name: Build
         run: npm run build
-      
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -60,13 +60,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Install Rust toolchain
-        uses: dtolnay/rust-action@stable
-      
+        uses: dtolnay/rust-action@1.85.0
+
       - name: Build documentation
         run: cargo doc --no-deps --all-features
-      
+
       - name: Upload Rust docs
         uses: actions/upload-artifact@v4
         with:

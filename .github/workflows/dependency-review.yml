@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-      
+
       - name: Dependency Review
         uses: actions/dependency-review-action@v4
         with:
@@ -28,12 +28,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Install Rust toolchain
-        uses: dtolnay/rust-action@stable
-      
+        uses: dtolnay/rust-action@1.85.0
+
       - name: Install cargo-audit
         run: cargo install cargo-audit
-      
+
       - name: Run cargo audit
         run: cargo audit

@@ -1,9 +1,13 @@
 [package]
 name = "fgo-sheba"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
+rust-version = "1.85"
 description = "AI-powered FGO automation for Android"
 license = "MIT"
+repository = "https://github.com/quinnjr/fgo-sheba"
+keywords = ["fgo", "fate-grand-order", "automation", "android", "ai"]
+categories = ["games", "multimedia"]
 
 [lib]
 crate-type = ["cdylib", "rlib"]
@@ -14,7 +18,7 @@ path = "src/main.rs"
 
 [dependencies]
 # ML/Vision
-ort = "2.0.0-rc.9"
+ort = "2.0.0-rc.10"
 image = "0.25"
 imageproc = "0.25"
 ndarray = "0.16"
@@ -38,3 +42,17 @@ ndk = "0.9"
 opt-level = 3
 lto = true
 strip = true
+
+[lints.rust]
+# Rust 2024 edition lints
+unsafe_op_in_unsafe_fn = "warn"
+
+[lints.clippy]
+all = "warn"
+pedantic = "warn"
+nursery = "warn"
+# Allow some pedantic lints
+module_name_repetitions = "allow"
+must_use_candidate = "allow"
+missing_errors_doc = "allow"
+missing_panics_doc = "allow"

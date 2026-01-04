@@ -5,7 +5,6 @@
 //! - Humanized tap positions with slight offsets
 //! - Random micro-pauses to simulate human attention drift
 
-use rand::Rng;
 
 pub mod humanize;
 

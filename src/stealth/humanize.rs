@@ -44,7 +44,7 @@ impl Humanizer {
         let processing_time = self.rng.gen_range(MIN_PROCESSING_TIME_MS..=MAX_PROCESSING_TIME_MS);
 
         // 5% chance of hesitation (200-800ms)
-        let hesitation = if self.rng.gen::<f32>() < 0.05 {
+        let hesitation = if self.rng.r#gen::<f32>() < 0.05 {
             self.rng.gen_range(200..=800)
         } else {
             0
@@ -93,7 +93,7 @@ impl Humanizer {
     fn gaussian_offset(&mut self, max_offset: i32) -> i32 {
         // Simple approximation using sum of uniform randoms
         let sum: f32 = (0..3)
-            .map(|_| self.rng.gen::<f32>() - 0.5)
+            .map(|_| self.rng.r#gen::<f32>() - 0.5)
             .sum();
 
         (sum * max_offset as f32 * 0.67) as i32
@@ -101,7 +101,7 @@ impl Humanizer {
 
     /// Check if a micro-pause should occur
     pub fn should_micro_pause(&mut self, probability: f32) -> bool {
-        self.rng.gen::<f32>() < probability
+        self.rng.r#gen::<f32>() < probability
     }
 
     /// Get micro-pause duration
@@ -131,7 +131,7 @@ impl Humanizer {
     /// Check if a break should be taken after battles
     pub fn should_take_break(&mut self, battles_completed: u32) -> bool {
         if battles_completed > 0 && battles_completed % 5 == 0 {
-            self.rng.gen::<f32>() < 0.15
+            self.rng.r#gen::<f32>() < 0.15
         } else {
             false
         }
