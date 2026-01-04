@@ -1,4 +1,4 @@
 #!/bin/sh
 
-# Run commitlint to validate commit message format
-pnpm commitlint --edit "$1"
+# Run cargo-commitlint to validate commit message format
+cargo commitlint check --edit "$1"

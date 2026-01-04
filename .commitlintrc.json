@@ -1,0 +1,89 @@
+{
+  "rules": {
+    "type-enum": {
+      "level": 2,
+      "applicable": "always",
+      "value": [
+        "feat",
+        "fix",
+        "docs",
+        "style",
+        "refactor",
+        "perf",
+        "test",
+        "build",
+        "ci",
+        "chore",
+        "revert",
+        "deps",
+        "security",
+        "i18n",
+        "a11y"
+      ]
+    },
+    "scope-enum": {
+      "level": 1,
+      "applicable": "always",
+      "value": [
+        "rust",
+        "android",
+        "ai",
+        "vision",
+        "stealth",
+        "ui",
+        "config",
+        "docs",
+        "ci",
+        "deps",
+        "i18n",
+        "release"
+      ]
+    },
+    "subject-case": {
+      "level": 2,
+      "applicable": "always",
+      "value": ["lower-case", "sentence-case"]
+    },
+    "subject-empty": {
+      "level": 2,
+      "applicable": "never",
+      "value": null
+    },
+    "subject-full-stop": {
+      "level": 2,
+      "applicable": "never",
+      "value": "."
+    },
+    "subject-max-length": {
+      "level": 2,
+      "applicable": "always",
+      "value": 72
+    },
+    "header-max-length": {
+      "level": 2,
+      "applicable": "always",
+      "value": 100
+    },
+    "body-leading-blank": {
+      "level": 2,
+      "applicable": "always",
+      "value": null
+    },
+    "body-max-line-length": {
+      "level": 2,
+      "applicable": "always",
+      "value": 100
+    },
+    "footer-leading-blank": {
+      "level": 2,
+      "applicable": "always",
+      "value": null
+    },
+    "footer-max-line-length": {
+      "level": 2,
+      "applicable": "always",
+      "value": 100
+    }
+  },
+  "helpUrl": "https://github.com/quinnjr/fgo-sheba/blob/main/CONTRIBUTING.md#commit-message-format"
+}

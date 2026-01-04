@@ -15,7 +15,7 @@
   "homepage": "https://github.com/quinnjr/fgo-sheba#readme",
   "scripts": {
     "prepare": "husky",
-    "commitlint": "commitlint --edit",
+    "commitlint": "cargo commitlint check --edit",
     "lint": "cargo clippy --all-targets --all-features",
     "fmt": "cargo fmt --all",
     "fmt:check": "cargo fmt --all -- --check",
@@ -25,8 +25,6 @@
     "clean": "cargo clean"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.0.0",
-    "@commitlint/config-conventional": "^19.0.0",
     "husky": "^9.0.0"
   },
   "engines": {
