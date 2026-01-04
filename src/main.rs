@@ -3,8 +3,8 @@
 //! This binary is used for testing the automation logic on desktop
 //! without requiring an Android device.
 
-use fgo_sheba::config::Settings;
 use fgo_sheba::Sheba;
+use fgo_sheba::config::Settings;
 
 fn main() {
     println!("FGO Sheba - AI-powered FGO Automation");
@@ -35,5 +35,8 @@ fn main() {
     println!("Current Configuration:");
     println!("  - Card Priority: {:?}", sheba.settings.card_priority);
     println!("  - NP Threshold: {}%", sheba.settings.np_threshold);
-    println!("  - Target Low HP First: {}", sheba.settings.target_low_hp_first);
+    println!(
+        "  - Target Low HP First: {}",
+        sheba.settings.target_low_hp_first
+    );
 }

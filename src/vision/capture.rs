@@ -43,9 +43,8 @@ impl ScreenCapture {
         }
 
         // Create image from raw data
-        let image: RgbaImage =
-            ImageBuffer::from_raw(width, height, frame_data.to_vec())
-                .ok_or(VisionError::InvalidFrameData)?;
+        let image: RgbaImage = ImageBuffer::from_raw(width, height, frame_data.to_vec())
+            .ok_or(VisionError::InvalidFrameData)?;
 
         self.current_frame = Some(image);
         self.width = width;
@@ -81,13 +80,7 @@ impl ScreenCapture {
     }
 
     /// Extract a region of the current frame
-    pub fn extract_region(
-        &self,
-        x: u32,
-        y: u32,
-        width: u32,
-        height: u32,
-    ) -> Option<RgbaImage> {
+    pub fn extract_region(&self, x: u32, y: u32, width: u32, height: u32) -> Option<RgbaImage> {
         let frame = self.current_frame.as_ref()?;
 
         // Validate bounds
@@ -173,23 +166,23 @@ pub mod regions {
 
     /// NP card regions (for 1920x1080 reference)
     pub const NP_REGIONS: [(u32, u32, u32, u32); 3] = [
-        (296, 200, 180, 220),  // NP 0
-        (616, 200, 180, 220),  // NP 1
-        (936, 200, 180, 220),  // NP 2
+        (296, 200, 180, 220), // NP 0
+        (616, 200, 180, 220), // NP 1
+        (936, 200, 180, 220), // NP 2
     ];
 
     /// Enemy regions (for 1920x1080 reference)
     pub const ENEMY_REGIONS: [(u32, u32, u32, u32); 3] = [
-        (200, 50, 300, 200),  // Enemy 0
-        (550, 50, 300, 200),  // Enemy 1
-        (900, 50, 300, 200),  // Enemy 2
+        (200, 50, 300, 200), // Enemy 0
+        (550, 50, 300, 200), // Enemy 1
+        (900, 50, 300, 200), // Enemy 2
     ];
 
     /// Servant portrait regions for card matching
     pub const SERVANT_PORTRAIT_REGIONS: [(u32, u32, u32, u32); 3] = [
-        (40, 850, 100, 100),   // Servant 0 portrait on battle screen
-        (390, 850, 100, 100),  // Servant 1
-        (740, 850, 100, 100),  // Servant 2
+        (40, 850, 100, 100),  // Servant 0 portrait on battle screen
+        (390, 850, 100, 100), // Servant 1
+        (740, 850, 100, 100), // Servant 2
     ];
 
     /// Wave indicator region

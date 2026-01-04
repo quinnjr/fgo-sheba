@@ -133,7 +133,8 @@ impl CardRecognizer {
             for x in sample_start_x..sample_end_x {
                 let pixel = np_image.get_pixel(x, y);
                 // Calculate perceived brightness
-                let brightness = (pixel[0] as u64 * 299 + pixel[1] as u64 * 587 + pixel[2] as u64 * 114) / 1000;
+                let brightness =
+                    (pixel[0] as u64 * 299 + pixel[1] as u64 * 587 + pixel[2] as u64 * 114) / 1000;
                 brightness_sum += brightness;
                 count += 1;
             }
@@ -290,13 +291,11 @@ mod tests {
         let mut matcher = ServantMatcher::new();
 
         // Add a red portrait
-        let red_portrait: RgbaImage =
-            ImageBuffer::from_fn(50, 50, |_, _| Rgba([255, 0, 0, 255]));
+        let red_portrait: RgbaImage = ImageBuffer::from_fn(50, 50, |_, _| Rgba([255, 0, 0, 255]));
         matcher.add_portrait(red_portrait);
 
         // Add a blue portrait
-        let blue_portrait: RgbaImage =
-            ImageBuffer::from_fn(50, 50, |_, _| Rgba([0, 0, 255, 255]));
+        let blue_portrait: RgbaImage = ImageBuffer::from_fn(50, 50, |_, _| Rgba([0, 0, 255, 255]));
         matcher.add_portrait(blue_portrait);
 
         // Test matching a red card

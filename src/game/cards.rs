@@ -162,7 +162,7 @@ impl Chain {
 
         match self.chain_type {
             ChainType::Buster => bonus *= 1.2,
-            ChainType::Arts => {} // Arts chains give NP, not damage
+            ChainType::Arts => {}  // Arts chains give NP, not damage
             ChainType::Quick => {} // Quick chains give stars, not damage
             ChainType::Brave => {} // Brave chains add extra attack, handled below
             ChainType::None => {}

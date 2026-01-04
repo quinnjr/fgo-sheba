@@ -40,8 +40,12 @@ impl Humanizer {
     ///
     /// Combines reaction time + visual processing time + occasional hesitation
     pub fn get_action_delay(&mut self) -> u64 {
-        let reaction_time = self.rng.gen_range(MIN_REACTION_TIME_MS..=MAX_REACTION_TIME_MS);
-        let processing_time = self.rng.gen_range(MIN_PROCESSING_TIME_MS..=MAX_PROCESSING_TIME_MS);
+        let reaction_time = self
+            .rng
+            .gen_range(MIN_REACTION_TIME_MS..=MAX_REACTION_TIME_MS);
+        let processing_time = self
+            .rng
+            .gen_range(MIN_PROCESSING_TIME_MS..=MAX_PROCESSING_TIME_MS);
 
         // 5% chance of hesitation (200-800ms)
         let hesitation = if self.rng.r#gen::<f32>() < 0.05 {
@@ -60,7 +64,8 @@ impl Humanizer {
 
     /// Get tap hold duration
     pub fn get_tap_duration(&mut self) -> u64 {
-        self.rng.gen_range(MIN_TAP_DURATION_MS..=MAX_TAP_DURATION_MS)
+        self.rng
+            .gen_range(MIN_TAP_DURATION_MS..=MAX_TAP_DURATION_MS)
     }
 
     /// Humanize a delay with variance
@@ -92,9 +97,7 @@ impl Humanizer {
     /// Generate gaussian-distributed offset
     fn gaussian_offset(&mut self, max_offset: i32) -> i32 {
         // Simple approximation using sum of uniform randoms
-        let sum: f32 = (0..3)
-            .map(|_| self.rng.r#gen::<f32>() - 0.5)
-            .sum();
+        let sum: f32 = (0..3).map(|_| self.rng.r#gen::<f32>() - 0.5).sum();
 
         (sum * max_offset as f32 * 0.67) as i32
     }
@@ -181,7 +184,13 @@ impl HumanizedAction {
     }
 
     /// Create a humanized consecutive tap (faster, for card selections)
-    pub fn consecutive_tap(humanizer: &mut Humanizer, x: i32, y: i32, max_offset: i32, is_first: bool) -> Self {
+    pub fn consecutive_tap(
+        humanizer: &mut Humanizer,
+        x: i32,
+        y: i32,
+        max_offset: i32,
+        is_first: bool,
+    ) -> Self {
         let (offset_x, offset_y) = humanizer.humanize_position(max_offset);
 
         Self {

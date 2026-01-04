@@ -163,10 +163,7 @@ impl BattleState {
 
     /// Select an NP
     pub fn select_np(&mut self, servant_idx: usize) -> bool {
-        if servant_idx < 3
-            && self.np_available[servant_idx]
-            && self.selected_cards.len() < 3
-        {
+        if servant_idx < 3 && self.np_available[servant_idx] && self.selected_cards.len() < 3 {
             self.selected_cards.push(Card {
                 card_type: CardType::NP,
                 servant_idx,

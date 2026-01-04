@@ -48,3 +48,6 @@ logs/
 *.temp
 *.swp
 *~
+# Node.js (for commitlint/husky)
+node_modules/
+.pnpm-store/

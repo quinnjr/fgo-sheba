@@ -165,7 +165,8 @@ impl Enemy {
 
     /// Get the tap coordinates to target this enemy
     pub fn target_coords(&self) -> Option<(i32, i32)> {
-        self.screen_bounds.map(|(x, y, w, h)| (x + w / 2, y + h / 2))
+        self.screen_bounds
+            .map(|(x, y, w, h)| (x + w / 2, y + h / 2))
     }
 
     /// Calculate how much damage is needed to kill this enemy (as a score)
@@ -229,7 +230,8 @@ impl EnemyWave {
 
     /// Check if any enemy has a dangerous NP
     pub fn has_dangerous_enemy(&self) -> bool {
-        self.alive_enemies().any(|e| e.has_dangerous_np || e.is_boss)
+        self.alive_enemies()
+            .any(|e| e.has_dangerous_np || e.is_boss)
     }
 }
 

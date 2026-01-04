@@ -47,13 +47,9 @@ impl SkillDecisionEngine {
                 }
 
                 // Score this skill usage
-                if let Some(rec) = self.evaluate_skill(
-                    servant_idx,
-                    skill_idx,
-                    servant,
-                    state,
-                    settings,
-                ) {
+                if let Some(rec) =
+                    self.evaluate_skill(servant_idx, skill_idx, servant, state, settings)
+                {
                     recommendations.push(rec);
                 }
             }
@@ -213,11 +209,7 @@ impl SkillDecisionEngine {
     }
 
     /// Get skill usage order for a specific wave
-    pub fn get_wave_skill_order(
-        &self,
-        wave: u32,
-        settings: &Settings,
-    ) -> Vec<SkillRecommendation> {
+    pub fn get_wave_skill_order(&self, wave: u32, settings: &Settings) -> Vec<SkillRecommendation> {
         // If user has defined a specific skill order, use that
         if let Some(ref skill_order) = settings.skill_settings.skill_order {
             return skill_order

@@ -202,7 +202,6 @@ pub struct EnemyPriority {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::game::enemy::EnemyClass;
 
     #[test]
     fn test_prioritizer_creation() {

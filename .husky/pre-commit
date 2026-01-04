@@ -1,0 +1,25 @@
+#!/bin/sh
+
+echo "🔍 Running pre-commit checks..."
+
+# Check Rust formatting
+echo "📝 Checking Rust formatting..."
+cargo fmt --all -- --check
+if [ $? -ne 0 ]; then
+    echo "❌ Rust formatting check failed. Run 'cargo fmt' to fix."
+    exit 1
+fi
+
+# Run Clippy (warnings only, show summary)
+echo "📎 Running Clippy..."
+cargo clippy --all-targets --all-features 2>&1 | tail -5
+
+# Quick compile check
+echo "🔨 Checking compilation..."
+cargo check --all-targets
+if [ $? -ne 0 ]; then
+    echo "❌ Compilation failed. Please fix errors before committing."
+    exit 1
+fi
+
+echo "✅ Pre-commit checks passed!"

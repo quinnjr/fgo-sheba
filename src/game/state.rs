@@ -162,7 +162,10 @@ impl GameState {
                 }
             }
             // Quest complete
-            (UIState::BattleResult | UIState::BondResult | UIState::ItemDrops, UIState::QuestComplete) => {
+            (
+                UIState::BattleResult | UIState::BondResult | UIState::ItemDrops,
+                UIState::QuestComplete,
+            ) => {
                 self.runs_completed += 1;
                 self.battle = None;
             }

@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Run commitlint to validate commit message format
+pnpm commitlint --edit "$1"

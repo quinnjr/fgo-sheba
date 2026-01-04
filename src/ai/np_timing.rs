@@ -131,12 +131,7 @@ impl NPTimingEngine {
         // Get NP types for each user
         let np_types: Vec<(usize, NPType)> = np_order
             .iter()
-            .filter_map(|&idx| {
-                state
-                    .servants
-                    .get(idx)
-                    .map(|s| (idx, s.np_type))
-            })
+            .filter_map(|&idx| state.servants.get(idx).map(|s| (idx, s.np_type)))
             .collect();
 
         // Optimize order based on NP types
@@ -239,7 +234,7 @@ impl Default for NPTimingEngine {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::game::enemy::{Enemy, EnemyWave};
+    use crate::game::enemy::EnemyWave;
     use crate::game::servant::ServantClass;
 
     #[test]

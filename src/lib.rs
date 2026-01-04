@@ -112,7 +112,10 @@ pub enum ShebaAction {
     /// Tap the Attack button to enter card selection
     TapAttack,
     /// Confirm Master Skill usage
-    UseMasterSkill { skill_idx: usize, target: Option<usize> },
+    UseMasterSkill {
+        skill_idx: usize,
+        target: Option<usize>,
+    },
 }
 
 /// Global Sheba instance for JNI access

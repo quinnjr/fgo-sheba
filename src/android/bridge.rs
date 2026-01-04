@@ -3,12 +3,12 @@
 //! These functions are called from Kotlin via JNI to interact with
 //! the Rust automation core.
 
-use jni::objects::{JByteArray, JClass, JString};
-use jni::sys::{jboolean, jint, jlong, JNI_TRUE};
 use jni::JNIEnv;
+use jni::objects::{JByteArray, JClass, JString};
+use jni::sys::{JNI_TRUE, jboolean, jint, jlong};
 
 use crate::config::Settings;
-use crate::{get_sheba, init_sheba, ShebaAction};
+use crate::{ShebaAction, get_sheba, init_sheba};
 
 /// Initialize the Sheba automation engine
 ///
@@ -259,10 +259,7 @@ fn encode_action(action: &ShebaAction) -> jlong {
         } => {
             let action_type: i64 = 5;
             let t = target.unwrap_or(255) as i64;
-            (action_type << 56)
-                | ((*servant_idx as i64) << 16)
-                | ((*skill_idx as i64) << 8)
-                | t
+            (action_type << 56) | ((*servant_idx as i64) << 16) | ((*skill_idx as i64) << 8) | t
         }
 
         ShebaAction::UseNP { servant_idx } => {

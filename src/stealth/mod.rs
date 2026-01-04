@@ -5,7 +5,6 @@
 //! - Humanized tap positions with slight offsets
 //! - Random micro-pauses to simulate human attention drift
 
-
 pub mod humanize;
 
 pub use humanize::*;

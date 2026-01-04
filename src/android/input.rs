@@ -2,8 +2,8 @@
 //!
 //! Generates touch events to be executed by the Android Accessibility Service.
 
-use crate::vision::ScreenElement;
 use crate::ShebaAction;
+use crate::vision::ScreenElement;
 
 /// Screen coordinates for FGO UI elements
 /// Based on 1920x1080 reference resolution
@@ -183,7 +183,12 @@ impl InputGenerator {
     }
 
     /// Generate action sequence for using a skill
-    pub fn use_skill(&self, servant_idx: usize, skill_idx: usize, target: Option<usize>) -> Vec<ShebaAction> {
+    pub fn use_skill(
+        &self,
+        servant_idx: usize,
+        skill_idx: usize,
+        target: Option<usize>,
+    ) -> Vec<ShebaAction> {
         let mut actions = Vec::new();
 
         // Tap the skill

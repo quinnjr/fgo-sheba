@@ -1,0 +1,37 @@
+{
+  "name": "fgo-sheba",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI-powered FGO automation for Android",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quinnjr/fgo-sheba.git"
+  },
+  "author": "Pegasus Heavy Industries",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/quinnjr/fgo-sheba/issues"
+  },
+  "homepage": "https://github.com/quinnjr/fgo-sheba#readme",
+  "scripts": {
+    "prepare": "husky",
+    "commitlint": "commitlint --edit",
+    "lint": "cargo clippy --all-targets --all-features",
+    "fmt": "cargo fmt --all",
+    "fmt:check": "cargo fmt --all -- --check",
+    "test": "cargo test",
+    "test:rust": "cargo test --all-features",
+    "build": "cargo build --release",
+    "clean": "cargo clean"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.0.0",
+    "@commitlint/config-conventional": "^19.0.0",
+    "husky": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@9.0.0"
+}

@@ -9,9 +9,9 @@ pub mod np_timing;
 pub mod skill_usage;
 pub mod strategy;
 
+use crate::ShebaAction;
 use crate::config::Settings;
 use crate::game::battle::BattleState;
-use crate::ShebaAction;
 
 pub use card_selector::CardSelector;
 pub use enemy_priority::EnemyPrioritizer;
@@ -110,23 +110,22 @@ impl BattleAI {
         let skill_recommendations = self.skill_engine.recommend_skills(state, settings);
 
         // Return the highest priority skill that should be used
-        skill_recommendations.into_iter().next().map(|rec| {
-            ShebaAction::UseSkill {
+        skill_recommendations
+            .into_iter()
+            .next()
+            .map(|rec| ShebaAction::UseSkill {
                 servant_idx: rec.servant_idx,
                 skill_idx: rec.skill_idx,
                 target: rec.target,
-            }
-        })
+            })
     }
 
     /// Decide card selection
     fn decide_card_selection(&self, state: &BattleState, settings: &Settings) -> ShebaAction {
         // First, decide on enemy targeting
-        let target_enemy = self.enemy_prioritizer.prioritize(
-            &state.current_wave,
-            &state.servants,
-            settings,
-        );
+        let target_enemy =
+            self.enemy_prioritizer
+                .prioritize(&state.current_wave, &state.servants, settings);
 
         // Check if we should use NPs
         let np_decisions = self.np_engine.decide_np_usage(state, settings);
@@ -219,7 +218,10 @@ mod tests {
     fn test_battle_ai_creation() {
         let ai = BattleAI::new();
         // Just verify it creates successfully
-        assert!(matches!(ai.strategy.strategy_type(), StrategyType::Balanced));
+        assert!(matches!(
+            ai.strategy.strategy_type(),
+            StrategyType::Balanced
+        ));
     }
 
     #[test]

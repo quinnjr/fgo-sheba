@@ -4,7 +4,7 @@
 //! class advantage, and first card bonus considerations.
 
 use crate::config::Settings;
-use crate::game::cards::{calculate_possible_chains, Card, CardType, Chain, ChainType};
+use crate::game::cards::{Card, CardType, Chain, ChainType, calculate_possible_chains};
 use crate::game::enemy::EnemyWave;
 use crate::game::servant::Servant;
 
@@ -165,7 +165,11 @@ impl CardSelector {
         scored_cards.sort_by(|a, b| b.1.partial_cmp(&a.1).unwrap());
 
         // Return top 3
-        scored_cards.into_iter().take(3).map(|(card, _)| card).collect()
+        scored_cards
+            .into_iter()
+            .take(3)
+            .map(|(card, _)| card)
+            .collect()
     }
 
     /// Score an individual card
