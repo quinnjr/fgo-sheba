@@ -111,11 +111,12 @@ class MainActivity : AppCompatActivity() {
         }
 
         val filter = IntentFilter("io.sheba.UPDATE_RECENTS_VISIBILITY")
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            registerReceiver(stealthReceiver, filter, RECEIVER_NOT_EXPORTED)
-        } else {
-            registerReceiver(stealthReceiver, filter)
-        }
+        ContextCompat.registerReceiver(
+            this,
+            stealthReceiver,
+            filter,
+            ContextCompat.RECEIVER_NOT_EXPORTED
+        )
     }
 
     private fun unregisterStealthReceiver() {
