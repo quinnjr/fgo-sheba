@@ -3,8 +3,8 @@
 //! This binary is used for testing the automation logic on desktop
 //! without requiring an Android device.
 
-use fgo_sheba::Sheba;
 use fgo_sheba::config::Settings;
+use fgo_sheba::Sheba;
 
 fn main() {
     println!("FGO Sheba - AI-powered FGO Automation");

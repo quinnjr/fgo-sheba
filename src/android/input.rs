@@ -2,8 +2,8 @@
 //!
 //! Generates touch events to be executed by the Android Accessibility Service.
 
-use crate::ShebaAction;
 use crate::vision::ScreenElement;
+use crate::ShebaAction;
 
 /// Screen coordinates for FGO UI elements
 /// Based on 1920x1080 reference resolution
@@ -319,10 +319,10 @@ mod tests {
     }
 
     #[test]
-    fn test_input_generator() {
-        let input_gen = InputGenerator::new(1920, 1080);
+    fn test_generator() {
+        let gen = InputGenerator::new(1920, 1080);
 
-        let action = input_gen.tap_attack();
+        let action = gen.tap_attack();
         match action {
             ShebaAction::Tap { x, y } => {
                 assert!(x > 1500); // Right side of screen
@@ -334,9 +334,9 @@ mod tests {
 
     #[test]
     fn test_card_selection_sequence() {
-        let input_gen = InputGenerator::new(1920, 1080);
+        let gen = InputGenerator::new(1920, 1080);
 
-        let actions = input_gen.select_cards(&[0, 1, 2]);
+        let actions = gen.select_cards(&[0, 1, 2]);
 
         // Should have 6 actions (3 taps + 3 waits)
         assert_eq!(actions.len(), 6);

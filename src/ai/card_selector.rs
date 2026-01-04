@@ -4,7 +4,7 @@
 //! class advantage, and first card bonus considerations.
 
 use crate::config::Settings;
-use crate::game::cards::{Card, CardType, Chain, ChainType, calculate_possible_chains};
+use crate::game::cards::{calculate_possible_chains, Card, CardType, Chain, ChainType};
 use crate::game::enemy::EnemyWave;
 use crate::game::servant::Servant;
 

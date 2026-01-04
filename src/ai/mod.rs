@@ -9,9 +9,9 @@ pub mod np_timing;
 pub mod skill_usage;
 pub mod strategy;
 
-use crate::ShebaAction;
 use crate::config::Settings;
 use crate::game::battle::BattleState;
+use crate::ShebaAction;
 
 pub use card_selector::CardSelector;
 pub use enemy_priority::EnemyPrioritizer;

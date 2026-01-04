@@ -63,8 +63,6 @@ jobs:
 
       - name: Install Rust toolchain
         uses: dtolnay/rust-toolchain@stable
-        with:
-          toolchain: 1.85.0
 
       - name: Build documentation
         run: cargo doc --no-deps --all-features
