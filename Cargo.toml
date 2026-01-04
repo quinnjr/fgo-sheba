@@ -15,9 +15,13 @@ crate-type = ["cdylib", "rlib"]
 name = "sheba"
 path = "src/main.rs"
 
+[features]
+default = []
+desktop-ml = ["ort"]  # Enable ONNX Runtime for desktop builds
+
 [dependencies]
-# ML/Vision
-ort = "2.0.0-rc.10"
+# ML/Vision (ort is optional - not available for Android)
+ort = { version = "2.0.0-rc.10", optional = true }
 image = "0.25"
 imageproc = "0.25"
 ndarray = "0.16"
