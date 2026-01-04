@@ -18,25 +18,25 @@
       </feMerge>
     </filter>
   </defs>
-  
+
   <!-- Background circle -->
   <circle cx="16" cy="16" r="15" fill="#0a0a1a"/>
-  
+
   <!-- Outer ring -->
   <circle cx="16" cy="16" r="14" fill="none" stroke="url(#iris)" stroke-width="1" opacity="0.6"/>
-  
+
   <!-- Middle ring -->
   <circle cx="16" cy="16" r="10" fill="none" stroke="url(#gold)" stroke-width="1" opacity="0.8"/>
-  
+
   <!-- Eye background -->
   <circle cx="16" cy="16" r="7" fill="url(#iris)" filter="url(#glow)"/>
-  
+
   <!-- Iris -->
   <circle cx="16" cy="16" r="5" fill="url(#gold)"/>
-  
+
   <!-- Pupil -->
   <circle cx="16" cy="16" r="2.5" fill="#050510"/>
-  
+
   <!-- Highlight -->
   <circle cx="18" cy="14" r="1.2" fill="white" opacity="0.9"/>
 </svg>

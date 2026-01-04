@@ -15,16 +15,14 @@
       </svg>
       <span class="nav-logo-text">SHEBA</span>
     </a>
-    
+
     <div class="nav-links">
       <a href="#features" class="nav-link">Features</a>
       <a href="#installation" class="nav-link">Installation</a>
       <a href="#usage" class="nav-link">Usage</a>
       <a href="#api" class="nav-link">API</a>
       <a href="https://github.com/quinnjr/fgo-sheba" target="_blank" class="nav-link nav-link-github">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-          <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-        </svg>
+        <fa-icon [icon]="['fab', 'github']" size="lg"></fa-icon>
       </a>
     </div>
   </div>
@@ -46,33 +44,32 @@
         <div class="eye-glint"></div>
       </div>
     </div>
-    
+
     <h1 class="hero-title animate-fade-in-up">
       <span class="text-glow">FGO SHEBA</span>
     </h1>
-    
+
     <p class="hero-subtitle animate-fade-in-up stagger-1">
       <span class="hero-subtitle-jp">未来を見通すレンズ</span>
       <span class="hero-subtitle-en">The Lens of the Future</span>
     </p>
-    
+
     <p class="hero-description animate-fade-in-up stagger-2">
       AI-powered Fate/Grand Order automation for Android.<br>
       Intelligent card selection, NP timing, and skill usage.
     </p>
-    
+
     <div class="hero-actions animate-fade-in-up stagger-3">
       <a href="#installation" class="btn btn-primary">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-          <path d="M12 16l-6-6h4V4h4v6h4l-6 6zM4 18h16v2H4v-2z"/>
-        </svg>
+        <fa-icon [icon]="['fas', 'download']"></fa-icon>
         Download
       </a>
       <a href="https://github.com/quinnjr/fgo-sheba" target="_blank" class="btn btn-secondary">
+        <fa-icon [icon]="['fab', 'github']"></fa-icon>
         View on GitHub
       </a>
     </div>
-    
+
     <div class="hero-stats animate-fade-in-up stagger-4">
       <div class="stat">
         <span class="stat-value text-glow">17</span>
@@ -85,15 +82,17 @@
       </div>
       <div class="stat-divider"></div>
       <div class="stat">
-        <span class="stat-value text-glow">Rust</span>
+        <span class="stat-value text-glow">
+          <fa-icon [icon]="['fab', 'rust']"></fa-icon>
+        </span>
         <span class="stat-label">+ Kotlin</span>
       </div>
     </div>
   </div>
-  
+
   <div class="hero-scroll-indicator">
     <span>Scroll to explore</span>
-    <div class="scroll-arrow"></div>
+    <fa-icon [icon]="['fas', 'chevron-down']" class="scroll-arrow-icon"></fa-icon>
   </div>
 </section>
 
@@ -108,77 +107,69 @@
         Everything you need for intelligent FGO automation
       </p>
     </div>
-    
+
     <div class="features-grid">
       <!-- AI Battle Engine -->
       <div class="feature-card card">
         <div class="feature-icon feature-icon-ai">
-          <svg viewBox="0 0 24 24" width="32" height="32">
-            <path fill="currentColor" d="M12 2a2 2 0 012 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 017 7h1a1 1 0 110 2h-1v1a2 2 0 01-2 2H5a2 2 0 01-2-2v-1H2a1 1 0 110-2h1a7 7 0 017-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 012-2zM7.5 13a1.5 1.5 0 100 3 1.5 1.5 0 000-3zm9 0a1.5 1.5 0 100 3 1.5 1.5 0 000-3zM12 9a5 5 0 00-5 5v3h10v-3a5 5 0 00-5-5z"/>
-          </svg>
+          <fa-icon [icon]="['fas', 'brain']" size="2x"></fa-icon>
         </div>
         <h3 class="feature-title">AI Battle Engine</h3>
         <p class="feature-description">
           Machine learning-powered decision making for optimal card chains, NP timing, and skill usage.
         </p>
         <ul class="feature-list">
-          <li>Intelligent card selection</li>
-          <li>Dynamic NP timing</li>
-          <li>Adaptive skill usage</li>
+          <li><fa-icon [icon]="['fas', 'bolt']" class="list-icon"></fa-icon> Intelligent card selection</li>
+          <li><fa-icon [icon]="['fas', 'bolt']" class="list-icon"></fa-icon> Dynamic NP timing</li>
+          <li><fa-icon [icon]="['fas', 'bolt']" class="list-icon"></fa-icon> Adaptive skill usage</li>
         </ul>
       </div>
-      
+
       <!-- Vision System -->
       <div class="feature-card card">
         <div class="feature-icon feature-icon-vision">
-          <svg viewBox="0 0 24 24" width="32" height="32">
-            <path fill="currentColor" d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
-          </svg>
+          <fa-icon [icon]="['fas', 'eye']" size="2x"></fa-icon>
         </div>
         <h3 class="feature-title">Vision System</h3>
         <p class="feature-description">
           ONNX-based ML models for real-time screen recognition and game state detection.
         </p>
         <ul class="feature-list">
-          <li>Card type recognition</li>
-          <li>Servant detection</li>
-          <li>HP/NP bar reading</li>
+          <li><fa-icon [icon]="['fas', 'bolt']" class="list-icon"></fa-icon> Card type recognition</li>
+          <li><fa-icon [icon]="['fas', 'bolt']" class="list-icon"></fa-icon> Servant detection</li>
+          <li><fa-icon [icon]="['fas', 'bolt']" class="list-icon"></fa-icon> HP/NP bar reading</li>
         </ul>
       </div>
-      
+
       <!-- Stealth Mode -->
       <div class="feature-card card">
         <div class="feature-icon feature-icon-stealth">
-          <svg viewBox="0 0 24 24" width="32" height="32">
-            <path fill="currentColor" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
-          </svg>
+          <fa-icon [icon]="['fas', 'user-shield']" size="2x"></fa-icon>
         </div>
         <h3 class="feature-title">Stealth Mode</h3>
         <p class="feature-description">
           Anti-detection features with human behavior simulation for safer automation.
         </p>
         <ul class="feature-list">
-          <li>Humanized timing</li>
-          <li>Random tap offsets</li>
-          <li>Detection avoidance</li>
+          <li><fa-icon [icon]="['fas', 'bolt']" class="list-icon"></fa-icon> Humanized timing</li>
+          <li><fa-icon [icon]="['fas', 'bolt']" class="list-icon"></fa-icon> Random tap offsets</li>
+          <li><fa-icon [icon]="['fas', 'bolt']" class="list-icon"></fa-icon> Detection avoidance</li>
         </ul>
       </div>
-      
+
       <!-- Multi-Language -->
       <div class="feature-card card">
         <div class="feature-icon feature-icon-i18n">
-          <svg viewBox="0 0 24 24" width="32" height="32">
-            <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03A17.52 17.52 0 0014.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/>
-          </svg>
+          <fa-icon [icon]="['fas', 'globe']" size="2x"></fa-icon>
         </div>
         <h3 class="feature-title">17 Languages</h3>
         <p class="feature-description">
           Fully translated interface supporting players worldwide in their native language.
         </p>
         <ul class="feature-list">
-          <li>日本語, 中文, 한국어</li>
-          <li>English, Español, Français</li>
-          <li>Deutsch, Русский, العربية</li>
+          <li><fa-icon [icon]="['fas', 'bolt']" class="list-icon"></fa-icon> 日本語, 中文, 한국어</li>
+          <li><fa-icon [icon]="['fas', 'bolt']" class="list-icon"></fa-icon> English, Español, Français</li>
+          <li><fa-icon [icon]="['fas', 'bolt']" class="list-icon"></fa-icon> Deutsch, Русский, العربية</li>
         </ul>
       </div>
     </div>
@@ -196,63 +187,64 @@
         Get started in minutes
       </p>
     </div>
-    
+
     <div class="install-tabs">
       <button class="install-tab" [class.active]="activeTab() === 'apk'" (click)="setActiveTab('apk')">
-        📱 Download APK
+        <fa-icon [icon]="['fas', 'mobile-screen']"></fa-icon> Download APK
       </button>
       <button class="install-tab" [class.active]="activeTab() === 'source'" (click)="setActiveTab('source')">
-        🔧 Build from Source
+        <fa-icon [icon]="['fas', 'wrench']"></fa-icon> Build from Source
       </button>
     </div>
-    
+
     <div class="install-content card">
       @if (activeTab() === 'apk') {
         <div class="install-panel">
           <h3>Download Pre-built APK</h3>
           <p>The easiest way to get started. Download the latest release from GitHub.</p>
-          
+
           <div class="install-steps">
             <div class="install-step">
               <span class="step-number">1</span>
               <div class="step-content">
-                <h4>Download</h4>
+                <h4><fa-icon [icon]="['fas', 'download']"></fa-icon> Download</h4>
                 <p>Get the latest APK from the releases page</p>
                 <a href="https://github.com/quinnjr/fgo-sheba/releases" target="_blank" class="btn btn-primary">
-                  Download Latest Release
+                  <fa-icon [icon]="['fas', 'download']"></fa-icon> Download Latest Release
                 </a>
               </div>
             </div>
-            
+
             <div class="install-step">
               <span class="step-number">2</span>
               <div class="step-content">
-                <h4>Install</h4>
+                <h4><fa-icon [icon]="['fab', 'android']"></fa-icon> Install</h4>
                 <p>Enable "Install from unknown sources" and install the APK</p>
               </div>
             </div>
-            
+
             <div class="install-step">
               <span class="step-number">3</span>
               <div class="step-content">
-                <h4>Grant Permissions</h4>
+                <h4><fa-icon [icon]="['fas', 'gear']"></fa-icon> Grant Permissions</h4>
                 <p>Enable Accessibility Service and Overlay permission</p>
               </div>
             </div>
           </div>
         </div>
       }
-      
+
       @if (activeTab() === 'source') {
         <div class="install-panel">
           <h3>Build from Source</h3>
           <p>For developers who want to customize or contribute.</p>
-          
+
           <div class="code-block">
             <div class="code-header">
-              <span class="code-lang">bash</span>
+              <span class="code-lang"><fa-icon [icon]="['fas', 'terminal']"></fa-icon> bash</span>
               <button class="code-copy" (click)="copyCode()">
-                {{ copied() ? '✓ Copied!' : 'Copy' }}
+                <fa-icon [icon]="copied() ? ['fas', 'check'] : ['fas', 'copy']"></fa-icon>
+                {{ copied() ? 'Copied!' : 'Copy' }}
               </button>
             </div>
             <pre><code><span class="token-comment"># Clone the repository</span>
@@ -270,14 +262,14 @@ cargo build --release --target aarch64-linux-android
 cd android
 ./gradlew assembleRelease</code></pre>
           </div>
-          
+
           <div class="requirements">
-            <h4>Requirements</h4>
+            <h4><fa-icon [icon]="['fas', 'cog']"></fa-icon> Requirements</h4>
             <ul>
-              <li>Rust 1.85+ (2024 edition)</li>
-              <li>Android NDK r26b+</li>
-              <li>JDK 17+</li>
-              <li>Gradle 8.5+</li>
+              <li><fa-icon [icon]="['fab', 'rust']" class="req-icon"></fa-icon> Rust 1.85+ (2024 edition)</li>
+              <li><fa-icon [icon]="['fab', 'android']" class="req-icon"></fa-icon> Android NDK r26b+</li>
+              <li><fa-icon [icon]="['fas', 'code']" class="req-icon"></fa-icon> JDK 17+</li>
+              <li><fa-icon [icon]="['fas', 'gear']" class="req-icon"></fa-icon> Gradle 8.5+</li>
             </ul>
           </div>
         </div>
@@ -297,48 +289,48 @@ cd android
         Simple setup, powerful automation
       </p>
     </div>
-    
+
     <div class="usage-grid">
       <div class="usage-step">
         <div class="usage-step-number">01</div>
         <div class="usage-step-content">
-          <h3>Enable Permissions</h3>
+          <h3><fa-icon [icon]="['fas', 'gear']"></fa-icon> Enable Permissions</h3>
           <p>Grant Accessibility Service and Overlay permissions in the app settings.</p>
         </div>
       </div>
-      
+
       <div class="usage-step">
         <div class="usage-step-number">02</div>
         <div class="usage-step-content">
-          <h3>Launch FGO</h3>
+          <h3><fa-icon [icon]="['fas', 'rocket']"></fa-icon> Launch FGO</h3>
           <p>Start Fate/Grand Order and navigate to a quest you want to automate.</p>
         </div>
       </div>
-      
+
       <div class="usage-step">
         <div class="usage-step-number">03</div>
         <div class="usage-step-content">
-          <h3>Start Automation</h3>
+          <h3><fa-icon [icon]="['fas', 'bolt']"></fa-icon> Start Automation</h3>
           <p>Press the Start button in Sheba. The floating overlay will appear for control.</p>
         </div>
       </div>
-      
+
       <div class="usage-step">
         <div class="usage-step-number">04</div>
         <div class="usage-step-content">
-          <h3>Monitor & Adjust</h3>
+          <h3><fa-icon [icon]="['fas', 'eye']"></fa-icon> Monitor & Adjust</h3>
           <p>Watch the AI make decisions. Adjust settings as needed via the overlay.</p>
         </div>
       </div>
     </div>
-    
+
     <div class="tips-card card">
-      <h3>💡 Pro Tips</h3>
+      <h3><fa-icon [icon]="['fas', 'lightbulb']"></fa-icon> Pro Tips</h3>
       <ul>
-        <li>Disable USB debugging while using the app for better stealth</li>
-        <li>Use on a stable network connection for best performance</li>
-        <li>Configure card priorities in settings for your farming style</li>
-        <li>The AI learns from battle patterns - let it run a few rounds to optimize</li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']" class="tip-icon"></fa-icon> Disable USB debugging while using the app for better stealth</li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']" class="tip-icon"></fa-icon> Use on a stable network connection for best performance</li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']" class="tip-icon"></fa-icon> Configure card priorities in settings for your farming style</li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']" class="tip-icon"></fa-icon> The AI learns from battle patterns - let it run a few rounds to optimize</li>
       </ul>
     </div>
   </div>
@@ -355,10 +347,10 @@ cd android
         Built with modern, powerful technologies
       </p>
     </div>
-    
+
     <div class="arch-diagram">
       <div class="arch-layer arch-android">
-        <h4>Android Layer</h4>
+        <h4><fa-icon [icon]="['fab', 'android']"></fa-icon> Android Layer</h4>
         <div class="arch-components">
           <span class="arch-component">MainActivity</span>
           <span class="arch-component">AccessibilityService</span>
@@ -366,17 +358,14 @@ cd android
           <span class="arch-component">ScreenCapture</span>
         </div>
       </div>
-      
+
       <div class="arch-connector">
-        <svg viewBox="0 0 24 48" width="24" height="48">
-          <path d="M12 0 L12 48" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4"/>
-          <path d="M6 42 L12 48 L18 42" stroke="currentColor" stroke-width="2" fill="none"/>
-        </svg>
+        <fa-icon [icon]="['fas', 'chevron-down']" size="2x"></fa-icon>
         <span>JNI Bridge</span>
       </div>
-      
+
       <div class="arch-layer arch-rust">
-        <h4>Rust Core</h4>
+        <h4><fa-icon [icon]="['fab', 'rust']"></fa-icon> Rust Core</h4>
         <div class="arch-components">
           <span class="arch-component">Battle AI</span>
           <span class="arch-component">Vision System</span>
@@ -384,17 +373,14 @@ cd android
           <span class="arch-component">Stealth Module</span>
         </div>
       </div>
-      
+
       <div class="arch-connector">
-        <svg viewBox="0 0 24 48" width="24" height="48">
-          <path d="M12 0 L12 48" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4"/>
-          <path d="M6 42 L12 48 L18 42" stroke="currentColor" stroke-width="2" fill="none"/>
-        </svg>
+        <fa-icon [icon]="['fas', 'chevron-down']" size="2x"></fa-icon>
         <span>ONNX Runtime</span>
       </div>
-      
+
       <div class="arch-layer arch-ml">
-        <h4>ML Models</h4>
+        <h4><fa-icon [icon]="['fas', 'brain']"></fa-icon> ML Models</h4>
         <div class="arch-components">
           <span class="arch-component">Card Classifier</span>
           <span class="arch-component">Servant Detector</span>
@@ -420,31 +406,43 @@ cd android
         </div>
         <p class="footer-tagline">The future you see is the future you create.</p>
       </div>
-      
+
       <div class="footer-links">
         <div class="footer-column">
           <h4>Project</h4>
-          <a href="https://github.com/quinnjr/fgo-sheba" target="_blank">GitHub</a>
-          <a href="https://github.com/quinnjr/fgo-sheba/releases" target="_blank">Releases</a>
-          <a href="https://github.com/quinnjr/fgo-sheba/issues" target="_blank">Issues</a>
+          <a href="https://github.com/quinnjr/fgo-sheba" target="_blank">
+            <fa-icon [icon]="['fab', 'github']"></fa-icon> GitHub
+          </a>
+          <a href="https://github.com/quinnjr/fgo-sheba/releases" target="_blank">
+            <fa-icon [icon]="['fas', 'download']"></fa-icon> Releases
+          </a>
+          <a href="https://github.com/quinnjr/fgo-sheba/issues" target="_blank">
+            <fa-icon [icon]="['fas', 'code']"></fa-icon> Issues
+          </a>
         </div>
-        
+
         <div class="footer-column">
           <h4>Resources</h4>
-          <a href="#features">Features</a>
-          <a href="#installation">Installation</a>
-          <a href="#usage">Usage</a>
+          <a href="#features"><fa-icon [icon]="['fas', 'bolt']"></fa-icon> Features</a>
+          <a href="#installation"><fa-icon [icon]="['fas', 'download']"></fa-icon> Installation</a>
+          <a href="#usage"><fa-icon [icon]="['fas', 'rocket']"></fa-icon> Usage</a>
         </div>
-        
+
         <div class="footer-column">
           <h4>Community</h4>
-          <a href="https://github.com/quinnjr/fgo-sheba/discussions" target="_blank">Discussions</a>
-          <a href="https://github.com/quinnjr/fgo-sheba/blob/main/CONTRIBUTING.md" target="_blank">Contributing</a>
-          <a href="https://patreon.com/PegasusHeavyIndustries" target="_blank">Support</a>
+          <a href="https://github.com/quinnjr/fgo-sheba/discussions" target="_blank">
+            <fa-icon [icon]="['fas', 'code']"></fa-icon> Discussions
+          </a>
+          <a href="https://github.com/quinnjr/fgo-sheba/blob/main/CONTRIBUTING.md" target="_blank">
+            <fa-icon [icon]="['fas', 'code']"></fa-icon> Contributing
+          </a>
+          <a href="https://patreon.com/PegasusHeavyIndustries" target="_blank">
+            <fa-icon [icon]="['fab', 'patreon']"></fa-icon> Support
+          </a>
         </div>
       </div>
     </div>
-    
+
     <div class="footer-bottom">
       <p>Built with ❤️ by <a href="https://github.com/PegasusHeavyIndustries" target="_blank">Pegasus Heavy Industries</a></p>
       <p class="footer-disclaimer">

@@ -10,41 +10,41 @@
   --color-cosmos: #0a0a1a;
   --color-nebula: #12122a;
   --color-stardust: #1a1a3a;
-  
+
   /* Golden Accents */
   --color-gold: #ffd700;
   --color-gold-light: #ffe44d;
   --color-gold-dark: #b8960b;
   --color-gold-glow: rgba(255, 215, 0, 0.3);
-  
+
   /* Mystic Purple */
   --color-iris: #9370db;
   --color-iris-light: #b19cd9;
   --color-iris-dark: #6a5acd;
   --color-iris-glow: rgba(147, 112, 219, 0.3);
-  
+
   /* Celestial Blue */
   --color-celestial: #4169e1;
   --color-celestial-light: #6b8cff;
   --color-celestial-dark: #2d4aa8;
-  
+
   /* Text Colors */
   --color-text: #e8e8f0;
   --color-text-muted: #9090a8;
   --color-text-dim: #606078;
-  
+
   /* Status Colors */
   --color-success: #50fa7b;
   --color-warning: #ffb86c;
   --color-error: #ff5555;
   --color-info: #8be9fd;
-  
+
   /* Fonts */
   --font-display: 'Outfit', system-ui, sans-serif;
   --font-body: 'Outfit', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
   --font-japanese: 'Noto Sans JP', sans-serif;
-  
+
   /* Spacing */
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;
@@ -53,7 +53,7 @@
   --space-xl: 2rem;
   --space-2xl: 3rem;
   --space-3xl: 4rem;
-  
+
   /* Animation */
   --transition-fast: 150ms ease;
   --transition-normal: 300ms ease;
@@ -96,7 +96,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: 
+  background:
     radial-gradient(ellipse at 20% 20%, rgba(65, 105, 225, 0.15) 0%, transparent 50%),
     radial-gradient(ellipse at 80% 80%, rgba(147, 112, 219, 0.12) 0%, transparent 50%),
     radial-gradient(ellipse at 50% 50%, rgba(255, 215, 0, 0.05) 0%, transparent 70%),
@@ -214,14 +214,14 @@ a:hover {
 .btn-primary {
   background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-dark) 100%);
   color: var(--color-void);
-  box-shadow: 
+  box-shadow:
     0 4px 20px var(--color-gold-glow),
     inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 
+  box-shadow:
     0 8px 30px var(--color-gold-glow),
     inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
@@ -242,8 +242,8 @@ a:hover {
    ============================================ */
 
 .card {
-  background: linear-gradient(135deg, 
-    rgba(26, 26, 58, 0.8) 0%, 
+  background: linear-gradient(135deg,
+    rgba(26, 26, 58, 0.8) 0%,
     rgba(18, 18, 42, 0.9) 100%);
   border: 1px solid rgba(147, 112, 219, 0.2);
   border-radius: 16px;
@@ -255,7 +255,7 @@ a:hover {
 .card:hover {
   transform: translateY(-4px);
   border-color: var(--color-gold);
-  box-shadow: 
+  box-shadow:
     0 20px 40px rgba(0, 0, 0, 0.3),
     0 0 30px var(--color-gold-glow);
 }
@@ -330,11 +330,11 @@ pre code {
 }
 
 @keyframes pulse-glow {
-  0%, 100% { 
-    filter: drop-shadow(0 0 20px var(--color-gold-glow)); 
+  0%, 100% {
+    filter: drop-shadow(0 0 20px var(--color-gold-glow));
   }
-  50% { 
-    filter: drop-shadow(0 0 40px var(--color-gold-glow)) drop-shadow(0 0 60px var(--color-gold-glow)); 
+  50% {
+    filter: drop-shadow(0 0 40px var(--color-gold-glow)) drop-shadow(0 0 60px var(--color-gold-glow));
   }
 }
 
@@ -414,7 +414,7 @@ pre code {
   :root {
     font-size: 14px;
   }
-  
+
   .nav {
     padding: var(--space-sm) var(--space-md);
   }
