@@ -67,7 +67,7 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/ic_stop"
-                android:tint="@color/accent_gold"
+                app:tint="@color/accent_gold"
                 android:contentDescription="Pause" />
 
             <TextView
@@ -101,7 +101,7 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/ic_stop"
-                android:tint="@color/status_error"
+                app:tint="@color/status_error"
                 android:contentDescription="Stop" />
 
             <TextView
