@@ -34,8 +34,9 @@ jobs:
           cache: 'gradle'
 
       - name: Install Rust toolchain
-        uses: dtolnay/rust-action@1.85.0
+        uses: dtolnay/rust-toolchain@stable
         with:
+          toolchain: 1.85.0
           targets: aarch64-linux-android,armv7-linux-androideabi,x86_64-linux-android
 
       - name: Install Android NDK

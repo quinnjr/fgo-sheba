@@ -27,8 +27,9 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Install Rust toolchain
-        uses: dtolnay/rust-action@1.85.0
+        uses: dtolnay/rust-toolchain@stable
         with:
+          toolchain: 1.85.0
           components: rustfmt, clippy
 
       - name: Cache cargo registry
@@ -59,7 +60,9 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Install Rust toolchain
-        uses: dtolnay/rust-action@1.85.0
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: 1.85.0
 
       - name: Cache cargo registry
         uses: actions/cache@v4
@@ -89,8 +92,9 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Install Rust toolchain
-        uses: dtolnay/rust-action@1.85.0
+        uses: dtolnay/rust-toolchain@stable
         with:
+          toolchain: 1.85.0
           targets: ${{ matrix.target }}
 
       - name: Install Android NDK
@@ -132,8 +136,9 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Install Rust toolchain
-        uses: dtolnay/rust-action@1.85.0
+        uses: dtolnay/rust-toolchain@stable
         with:
+          toolchain: 1.85.0
           components: llvm-tools-preview
 
       - name: Install cargo-llvm-cov
