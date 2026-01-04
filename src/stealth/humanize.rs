@@ -133,7 +133,7 @@ impl Humanizer {
 
     /// Check if a break should be taken after battles
     pub fn should_take_break(&mut self, battles_completed: u32) -> bool {
-        if battles_completed > 0 && battles_completed % 5 == 0 {
+        if battles_completed > 0 && battles_completed.is_multiple_of(5) {
             self.rng.gen::<f32>() < 0.15
         } else {
             false
@@ -237,8 +237,8 @@ mod tests {
         // Generate multiple offsets and check they're bounded
         for _ in 0..100 {
             let (x, y) = humanizer.humanize_position(10);
-            assert!(x >= -10 && x <= 10);
-            assert!(y >= -10 && y <= 10);
+            assert!((-10..=10).contains(&x));
+            assert!((-10..=10).contains(&y));
         }
     }
 

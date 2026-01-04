@@ -201,7 +201,7 @@ impl Servant {
 
     /// Get the NP overcharge level (1-5)
     pub fn overcharge_level(&self) -> u32 {
-        (self.np_gauge / 100).min(5).max(1)
+        (self.np_gauge / 100).clamp(1, 5)
     }
 
     /// Calculate damage multiplier against an enemy class

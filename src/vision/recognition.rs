@@ -234,9 +234,9 @@ impl ServantMatcher {
                 let pixel_a = resized_a.get_pixel(x, y);
                 let pixel_b = resized_b.get_pixel(x, y);
 
-                let diff_r = (pixel_a[0] as i32 - pixel_b[0] as i32).abs() as u64;
-                let diff_g = (pixel_a[1] as i32 - pixel_b[1] as i32).abs() as u64;
-                let diff_b = (pixel_a[2] as i32 - pixel_b[2] as i32).abs() as u64;
+                let diff_r = (pixel_a[0] as i32 - pixel_b[0] as i32).unsigned_abs() as u64;
+                let diff_g = (pixel_a[1] as i32 - pixel_b[1] as i32).unsigned_abs() as u64;
+                let diff_b = (pixel_a[2] as i32 - pixel_b[2] as i32).unsigned_abs() as u64;
 
                 total_diff += diff_r + diff_g + diff_b;
                 count += 3;

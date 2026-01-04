@@ -14,6 +14,7 @@ pub struct SkillDecisionEngine {
     /// Priority for damage buff skills
     damage_buff_priority: f32,
     /// Priority for defensive skills
+    #[allow(dead_code)]
     defensive_priority: f32,
 }
 

@@ -238,8 +238,10 @@ mod tests {
     #[test]
     fn test_threat_priority() {
         let prioritizer = EnemyPrioritizer::new();
-        let mut settings = Settings::default();
-        settings.target_low_hp_first = false;
+        let settings = Settings {
+            target_low_hp_first: false,
+            ..Default::default()
+        };
 
         let mut wave = EnemyWave::new(1, 3);
         wave.enemies.push(Enemy {

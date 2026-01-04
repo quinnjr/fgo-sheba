@@ -145,6 +145,7 @@ pub mod digit_templates {
 }
 
 /// HP bar reader specifically for FGO's HP display
+#[allow(dead_code)]
 pub struct HPBarReader {
     /// HP bar width in pixels (reference resolution)
     bar_width: u32,
@@ -310,6 +311,6 @@ mod tests {
         });
 
         let gauge = NPGaugeReader::read_gauge(&np_region);
-        assert!(gauge >= 40 && gauge <= 60);
+        assert!((40..=60).contains(&gauge));
     }
 }
