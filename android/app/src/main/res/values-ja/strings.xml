@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Japanese / 日本語 -->
+    <string name="app_name">シェバ</string>
+    <string name="app_subtitle">AI搭載FGO自動化ツール</string>
+    <string name="app_version">シェバ v0.1.0 • 未来を見通すレンズ</string>
+
+    <!-- Status -->
+    <string name="status_idle">待機中</string>
+    <string name="status_running">自動化実行中</string>
+    <string name="status_paused">一時停止</string>
+    <string name="status_error">エラーが発生しました</string>
+
+    <!-- Buttons -->
+    <string name="start_automation">自動化を開始</string>
+    <string name="stop_automation">自動化を停止</string>
+
+    <!-- Permissions -->
+    <string name="permission_enabled">有効</string>
+    <string name="permission_disabled">タップして有効化</string>
+    <string name="permission_granted">許可済み</string>
+    <string name="permission_required">タップして許可</string>
+
+    <!-- Accessibility -->
+    <string name="accessibility_service_label">ディスプレイヘルパー</string>
+    <string name="accessibility_service_description">画面操作とディスプレイアシスタンスを支援するサービスです。画面コンテンツを監視し、ユーザビリティ機能を提供します。</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_accessibility_required">アクセシビリティサービスを有効にしてください</string>
+    <string name="toast_overlay_required">オーバーレイ権限を許可してください</string>
+    <string name="toast_screen_capture_denied">画面キャプチャが拒否されました</string>
+    <string name="toast_init_failed">自動化エンジンの初期化に失敗しました</string>
+    <string name="toast_automation_started">自動化を開始しました</string>
+    <string name="toast_automation_stopped">自動化を停止しました</string>
+
+    <!-- Settings -->
+    <string name="settings_title">設定</string>
+    <string name="settings_card_priority">カード選択優先度</string>
+    <string name="settings_np_usage">宝具使用設定</string>
+    <string name="settings_skill_timing">スキルタイミング</string>
+
+    <!-- UI Labels -->
+    <string name="label_permissions">権限</string>
+    <string name="label_session_stats">セッション統計</string>
+    <string name="label_battles">バトル数</string>
+    <string name="label_runtime">実行時間</string>
+    <string name="label_nps_used">宝具使用回数</string>
+    <string name="label_accessibility_service">アクセシビリティサービス</string>
+    <string name="label_display_overlay">オーバーレイ表示</string>
+
+    <!-- Security -->
+    <string name="security_notice">セキュリティ通知</string>
+    <string name="security_understood">了解</string>
+    <string name="security_dont_show">今後表示しない</string>
+</resources>

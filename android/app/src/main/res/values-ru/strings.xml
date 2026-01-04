@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Russian / Русский -->
+    <string name="app_name">ШЕБА</string>
+    <string name="app_subtitle">ИИ-автоматизация FGO</string>
+    <string name="app_version">Шеба v0.1.0 • Линза Будущего</string>
+
+    <!-- Status -->
+    <string name="status_idle">Ожидание Команды</string>
+    <string name="status_running">Автоматизация Активна</string>
+    <string name="status_paused">На Паузе</string>
+    <string name="status_error">Произошла Ошибка</string>
+
+    <!-- Buttons -->
+    <string name="start_automation">Запустить Автоматизацию</string>
+    <string name="stop_automation">Остановить Автоматизацию</string>
+
+    <!-- Permissions -->
+    <string name="permission_enabled">Включено</string>
+    <string name="permission_disabled">Нажмите для включения</string>
+    <string name="permission_granted">Разрешено</string>
+    <string name="permission_required">Нажмите для разрешения</string>
+
+    <!-- Accessibility -->
+    <string name="accessibility_service_label">Помощник Дисплея</string>
+    <string name="accessibility_service_description">Этот сервис помогает с взаимодействием экрана и отображением. Он отслеживает содержимое экрана для предоставления улучшенных функций удобства использования.</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_accessibility_required">Пожалуйста, включите службу специальных возможностей</string>
+    <string name="toast_overlay_required">Пожалуйста, предоставьте разрешение на наложение</string>
+    <string name="toast_screen_capture_denied">Разрешение на захват экрана отклонено</string>
+    <string name="toast_init_failed">Не удалось инициализировать движок автоматизации</string>
+    <string name="toast_automation_started">Автоматизация запущена</string>
+    <string name="toast_automation_stopped">Автоматизация остановлена</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Настройки</string>
+    <string name="settings_card_priority">Приоритет Выбора Карт</string>
+    <string name="settings_np_usage">Использование Noble Phantasm</string>
+    <string name="settings_skill_timing">Тайминг Навыков</string>
+
+    <!-- UI Labels -->
+    <string name="label_permissions">Разрешения</string>
+    <string name="label_session_stats">Статистика Сессии</string>
+    <string name="label_battles">Сражений</string>
+    <string name="label_runtime">Время Работы</string>
+    <string name="label_nps_used">NP Использовано</string>
+    <string name="label_accessibility_service">Служба Специальных Возможностей</string>
+    <string name="label_display_overlay">Наложение Дисплея</string>
+
+    <!-- Security -->
+    <string name="security_notice">Уведомление о Безопасности</string>
+    <string name="security_understood">Понятно</string>
+    <string name="security_dont_show">Больше не показывать</string>
+</resources>

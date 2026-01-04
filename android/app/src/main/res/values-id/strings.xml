@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Indonesian / Bahasa Indonesia -->
+    <string name="app_name">SHEBA</string>
+    <string name="app_subtitle">Otomatisasi FGO Bertenaga AI</string>
+    <string name="app_version">Sheba v0.1.0 • Lensa Masa Depan</string>
+
+    <!-- Status -->
+    <string name="status_idle">Menunggu Perintah</string>
+    <string name="status_running">Otomatisasi Aktif</string>
+    <string name="status_paused">Dijeda</string>
+    <string name="status_error">Terjadi Kesalahan</string>
+
+    <!-- Buttons -->
+    <string name="start_automation">Mulai Otomatisasi</string>
+    <string name="stop_automation">Hentikan Otomatisasi</string>
+
+    <!-- Permissions -->
+    <string name="permission_enabled">Diaktifkan</string>
+    <string name="permission_disabled">Ketuk untuk mengaktifkan</string>
+    <string name="permission_granted">Diberikan</string>
+    <string name="permission_required">Ketuk untuk memberikan</string>
+
+    <!-- Accessibility -->
+    <string name="accessibility_service_label">Pembantu Tampilan</string>
+    <string name="accessibility_service_description">Layanan ini membantu interaksi layar dan bantuan tampilan. Layanan ini memantau konten layar untuk menyediakan fitur kegunaan yang ditingkatkan.</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_accessibility_required">Harap aktifkan layanan aksesibilitas</string>
+    <string name="toast_overlay_required">Harap berikan izin overlay</string>
+    <string name="toast_screen_capture_denied">Izin tangkapan layar ditolak</string>
+    <string name="toast_init_failed">Gagal menginisialisasi mesin otomatisasi</string>
+    <string name="toast_automation_started">Otomatisasi dimulai</string>
+    <string name="toast_automation_stopped">Otomatisasi dihentikan</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Pengaturan</string>
+    <string name="settings_card_priority">Prioritas Pemilihan Kartu</string>
+    <string name="settings_np_usage">Penggunaan Noble Phantasm</string>
+    <string name="settings_skill_timing">Waktu Skill</string>
+
+    <!-- UI Labels -->
+    <string name="label_permissions">Izin</string>
+    <string name="label_session_stats">Statistik Sesi</string>
+    <string name="label_battles">Pertempuran</string>
+    <string name="label_runtime">Waktu Berjalan</string>
+    <string name="label_nps_used">NP Digunakan</string>
+    <string name="label_accessibility_service">Layanan Aksesibilitas</string>
+    <string name="label_display_overlay">Overlay Tampilan</string>
+
+    <!-- Security -->
+    <string name="security_notice">Pemberitahuan Keamanan</string>
+    <string name="security_understood">Mengerti</string>
+    <string name="security_dont_show">Jangan tampilkan lagi</string>
+</resources>

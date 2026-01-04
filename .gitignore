@@ -1,0 +1,50 @@
+# Rust
+/target
+Cargo.lock
+
+# Android
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+*.apk
+*.aab
+*.jks
+*.keystore
+
+# Python
+training/venv/
+training/__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+
+# Training data (downloaded from Atlas Academy / APK extraction)
+training/training_data/
+training/downloads/
+training/*.apk
+
+# ML Models (large binary files - use git lfs for committed models)
+# Uncommitted/local models
+models/*.onnx
+models/*.pt
+models/*.pth
+models/*.bin
+!models/.gitkeep
+
+# IDE
+.idea/
+.vscode/
+*.iml
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*~

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Chinese Traditional / 繁體中文 -->
+    <string name="app_name">示巴</string>
+    <string name="app_subtitle">AI驅動的FGO自動化工具</string>
+    <string name="app_version">示巴 v0.1.0 • 洞察未來之鏡</string>
+
+    <!-- Status -->
+    <string name="status_idle">等待指令</string>
+    <string name="status_running">自動化執行中</string>
+    <string name="status_paused">已暫停</string>
+    <string name="status_error">發生錯誤</string>
+
+    <!-- Buttons -->
+    <string name="start_automation">開始自動化</string>
+    <string name="stop_automation">停止自動化</string>
+
+    <!-- Permissions -->
+    <string name="permission_enabled">已啟用</string>
+    <string name="permission_disabled">點擊啟用</string>
+    <string name="permission_granted">已授權</string>
+    <string name="permission_required">點擊授權</string>
+
+    <!-- Accessibility -->
+    <string name="accessibility_service_label">顯示助手</string>
+    <string name="accessibility_service_description">此服務幫助螢幕互動和顯示輔助。它監控螢幕內容以提供增強的可用性功能。</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_accessibility_required">請啟用無障礙服務</string>
+    <string name="toast_overlay_required">請授予懸浮視窗權限</string>
+    <string name="toast_screen_capture_denied">螢幕錄製權限被拒絕</string>
+    <string name="toast_init_failed">自動化引擎初始化失敗</string>
+    <string name="toast_automation_started">自動化已啟動</string>
+    <string name="toast_automation_stopped">自動化已停止</string>
+
+    <!-- Settings -->
+    <string name="settings_title">設定</string>
+    <string name="settings_card_priority">指令卡選擇優先級</string>
+    <string name="settings_np_usage">寶具使用設定</string>
+    <string name="settings_skill_timing">技能釋放時機</string>
+
+    <!-- UI Labels -->
+    <string name="label_permissions">權限</string>
+    <string name="label_session_stats">本次統計</string>
+    <string name="label_battles">戰鬥次數</string>
+    <string name="label_runtime">執行時間</string>
+    <string name="label_nps_used">寶具次數</string>
+    <string name="label_accessibility_service">無障礙服務</string>
+    <string name="label_display_overlay">懸浮視窗顯示</string>
+
+    <!-- Security -->
+    <string name="security_notice">安全提示</string>
+    <string name="security_understood">知道了</string>
+    <string name="security_dont_show">不再顯示</string>
+</resources>

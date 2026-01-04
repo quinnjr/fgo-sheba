@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Turkish / Türkçe -->
+    <string name="app_name">SHEBA</string>
+    <string name="app_subtitle">Yapay Zeka Destekli FGO Otomasyonu</string>
+    <string name="app_version">Sheba v0.1.0 • Geleceğin Merceği</string>
+
+    <!-- Status -->
+    <string name="status_idle">Komut Bekleniyor</string>
+    <string name="status_running">Otomasyon Aktif</string>
+    <string name="status_paused">Duraklatıldı</string>
+    <string name="status_error">Hata Oluştu</string>
+
+    <!-- Buttons -->
+    <string name="start_automation">Otomasyonu Başlat</string>
+    <string name="stop_automation">Otomasyonu Durdur</string>
+
+    <!-- Permissions -->
+    <string name="permission_enabled">Etkin</string>
+    <string name="permission_disabled">Etkinleştirmek için dokunun</string>
+    <string name="permission_granted">Verildi</string>
+    <string name="permission_required">Vermek için dokunun</string>
+
+    <!-- Accessibility -->
+    <string name="accessibility_service_label">Ekran Yardımcısı</string>
+    <string name="accessibility_service_description">Bu hizmet, ekran etkileşimi ve görüntüleme yardımı sağlar. Gelişmiş kullanılabilirlik özellikleri sunmak için ekran içeriğini izler.</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_accessibility_required">Lütfen erişilebilirlik hizmetini etkinleştirin</string>
+    <string name="toast_overlay_required">Lütfen üst katman izni verin</string>
+    <string name="toast_screen_capture_denied">Ekran yakalama izni reddedildi</string>
+    <string name="toast_init_failed">Otomasyon motoru başlatılamadı</string>
+    <string name="toast_automation_started">Otomasyon başlatıldı</string>
+    <string name="toast_automation_stopped">Otomasyon durduruldu</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Ayarlar</string>
+    <string name="settings_card_priority">Kart Seçim Önceliği</string>
+    <string name="settings_np_usage">Noble Phantasm Kullanımı</string>
+    <string name="settings_skill_timing">Yetenek Zamanlaması</string>
+
+    <!-- UI Labels -->
+    <string name="label_permissions">İzinler</string>
+    <string name="label_session_stats">Oturum İstatistikleri</string>
+    <string name="label_battles">Savaşlar</string>
+    <string name="label_runtime">Çalışma Süresi</string>
+    <string name="label_nps_used">Kullanılan NP</string>
+    <string name="label_accessibility_service">Erişilebilirlik Hizmeti</string>
+    <string name="label_display_overlay">Ekran Katmanı</string>
+
+    <!-- Security -->
+    <string name="security_notice">Güvenlik Bildirimi</string>
+    <string name="security_understood">Anladım</string>
+    <string name="security_dont_show">Bir daha gösterme</string>
+</resources>

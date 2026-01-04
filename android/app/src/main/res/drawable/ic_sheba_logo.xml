@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- Outer ring -->
+    <path
+        android:pathData="M60,10 A50,50 0 1,1 59.99,10"
+        android:strokeWidth="3"
+        android:strokeColor="#D4AF37"
+        android:fillColor="#00000000" />
+
+    <!-- Inner mystical circle -->
+    <path
+        android:pathData="M60,20 A40,40 0 1,1 59.99,20"
+        android:strokeWidth="1.5"
+        android:strokeColor="#806B4C9A"
+        android:fillColor="#00000000" />
+
+    <!-- Eye of Sheba - outer -->
+    <path
+        android:pathData="M30,60 Q60,30 90,60 Q60,90 30,60 Z"
+        android:strokeWidth="2.5"
+        android:strokeColor="#D4AF37"
+        android:fillColor="#201A1A2E" />
+
+    <!-- Eye - iris -->
+    <path
+        android:pathData="M60,45 A15,15 0 1,1 59.99,45"
+        android:fillColor="#6B4C9A" />
+
+    <!-- Eye - pupil -->
+    <path
+        android:pathData="M60,52 A8,8 0 1,1 59.99,52"
+        android:fillColor="#D4AF37" />
+
+    <!-- Eye - highlight -->
+    <path
+        android:pathData="M55,50 A3,3 0 1,1 54.99,50"
+        android:fillColor="#FFFFFF" />
+
+    <!-- Decorative rays -->
+    <path
+        android:pathData="M60,5 L60,15 M60,105 L60,115 M5,60 L15,60 M105,60 L115,60"
+        android:strokeWidth="2"
+        android:strokeColor="#80D4AF37" />
+
+    <!-- Corner decorations -->
+    <path
+        android:pathData="M20,20 L30,25 L25,30 M100,20 L90,25 L95,30 M20,100 L30,95 L25,90 M100,100 L90,95 L95,90"
+        android:strokeWidth="1.5"
+        android:strokeColor="#60D4AF37"
+        android:fillColor="#00000000" />
+</vector>

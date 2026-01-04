@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Background circle -->
+    <path
+        android:pathData="M54,54m-40,0a40,40 0,1 1,80 0a40,40 0,1 1,-80 0"
+        android:fillColor="#1A1A2E" />
+
+    <!-- Outer decorative ring -->
+    <path
+        android:pathData="M54,14 A40,40 0 1,1 53.99,14"
+        android:strokeWidth="2"
+        android:strokeColor="#D4AF37"
+        android:fillColor="#00000000" />
+
+    <!-- Inner mystic ring -->
+    <path
+        android:pathData="M54,22 A32,32 0 1,1 53.99,22"
+        android:strokeWidth="1"
+        android:strokeColor="#806B4C9A"
+        android:fillColor="#00000000" />
+
+    <!-- Eye of Sheba - outer almond shape -->
+    <path
+        android:pathData="M28,54 Q54,28 80,54 Q54,80 28,54 Z"
+        android:strokeWidth="2.5"
+        android:strokeColor="#D4AF37"
+        android:fillColor="#20D4AF37" />
+
+    <!-- Eye - outer iris -->
+    <path
+        android:pathData="M54,40 A14,14 0 1,1 53.99,40"
+        android:fillColor="#6B4C9A" />
+
+    <!-- Eye - inner iris gradient simulation -->
+    <path
+        android:pathData="M54,44 A10,10 0 1,1 53.99,44"
+        android:fillColor="#8B6BB8" />
+
+    <!-- Eye - pupil -->
+    <path
+        android:pathData="M54,48 A6,6 0 1,1 53.99,48"
+        android:fillColor="#D4AF37" />
+
+    <!-- Eye - inner pupil -->
+    <path
+        android:pathData="M54,51 A3,3 0 1,1 53.99,51"
+        android:fillColor="#FFD700" />
+
+    <!-- Eye - highlight -->
+    <path
+        android:pathData="M50,49 A2,2 0 1,1 49.99,49"
+        android:fillColor="#FFFFFF" />
+
+    <!-- Decorative corner marks -->
+    <path
+        android:pathData="M22,22 L28,26 L26,28 Z"
+        android:fillColor="#60D4AF37" />
+    <path
+        android:pathData="M86,22 L80,26 L82,28 Z"
+        android:fillColor="#60D4AF37" />
+    <path
+        android:pathData="M22,86 L28,82 L26,80 Z"
+        android:fillColor="#60D4AF37" />
+    <path
+        android:pathData="M86,86 L80,82 L82,80 Z"
+        android:fillColor="#60D4AF37" />
+</vector>

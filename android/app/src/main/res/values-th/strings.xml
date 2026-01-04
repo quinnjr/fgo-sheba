@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Thai / ภาษาไทย -->
+    <string name="app_name">เชบา</string>
+    <string name="app_subtitle">ระบบอัตโนมัติ FGO ด้วย AI</string>
+    <string name="app_version">เชบา v0.1.0 • เลนส์แห่งอนาคต</string>
+
+    <!-- Status -->
+    <string name="status_idle">รอคำสั่ง</string>
+    <string name="status_running">ระบบอัตโนมัติทำงาน</string>
+    <string name="status_paused">หยุดชั่วคราว</string>
+    <string name="status_error">เกิดข้อผิดพลาด</string>
+
+    <!-- Buttons -->
+    <string name="start_automation">เริ่มระบบอัตโนมัติ</string>
+    <string name="stop_automation">หยุดระบบอัตโนมัติ</string>
+
+    <!-- Permissions -->
+    <string name="permission_enabled">เปิดใช้งานแล้ว</string>
+    <string name="permission_disabled">แตะเพื่อเปิดใช้งาน</string>
+    <string name="permission_granted">อนุญาตแล้ว</string>
+    <string name="permission_required">แตะเพื่ออนุญาต</string>
+
+    <!-- Accessibility -->
+    <string name="accessibility_service_label">ตัวช่วยหน้าจอ</string>
+    <string name="accessibility_service_description">บริการนี้ช่วยในการโต้ตอบกับหน้าจอและช่วยเหลือการแสดงผล โดยตรวจสอบเนื้อหาบนหน้าจอเพื่อให้ฟีเจอร์การใช้งานที่ดีขึ้น</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_accessibility_required">กรุณาเปิดใช้งานบริการการเข้าถึง</string>
+    <string name="toast_overlay_required">กรุณาอนุญาตการแสดงทับ</string>
+    <string name="toast_screen_capture_denied">ปฏิเสธการอนุญาตจับภาพหน้าจอ</string>
+    <string name="toast_init_failed">เริ่มต้นเครื่องมืออัตโนมัติไม่สำเร็จ</string>
+    <string name="toast_automation_started">เริ่มระบบอัตโนมัติแล้ว</string>
+    <string name="toast_automation_stopped">หยุดระบบอัตโนมัติแล้ว</string>
+
+    <!-- Settings -->
+    <string name="settings_title">การตั้งค่า</string>
+    <string name="settings_card_priority">ลำดับความสำคัญการเลือกการ์ด</string>
+    <string name="settings_np_usage">การใช้ Noble Phantasm</string>
+    <string name="settings_skill_timing">เวลาใช้สกิล</string>
+
+    <!-- UI Labels -->
+    <string name="label_permissions">สิทธิ์</string>
+    <string name="label_session_stats">สถิติเซสชัน</string>
+    <string name="label_battles">การต่อสู้</string>
+    <string name="label_runtime">เวลาทำงาน</string>
+    <string name="label_nps_used">NP ที่ใช้</string>
+    <string name="label_accessibility_service">บริการการเข้าถึง</string>
+    <string name="label_display_overlay">การแสดงทับหน้าจอ</string>
+
+    <!-- Security -->
+    <string name="security_notice">ประกาศความปลอดภัย</string>
+    <string name="security_understood">เข้าใจแล้ว</string>
+    <string name="security_dont_show">ไม่ต้องแสดงอีก</string>
+</resources>

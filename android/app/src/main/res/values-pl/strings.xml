@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Polish / Polski -->
+    <string name="app_name">SHEBA</string>
+    <string name="app_subtitle">Automatyzacja FGO z AI</string>
+    <string name="app_version">Sheba v0.1.0 • Soczewka Przyszłości</string>
+
+    <!-- Status -->
+    <string name="status_idle">Oczekiwanie na Polecenie</string>
+    <string name="status_running">Automatyzacja Aktywna</string>
+    <string name="status_paused">Wstrzymana</string>
+    <string name="status_error">Wystąpił Błąd</string>
+
+    <!-- Buttons -->
+    <string name="start_automation">Uruchom Automatyzację</string>
+    <string name="stop_automation">Zatrzymaj Automatyzację</string>
+
+    <!-- Permissions -->
+    <string name="permission_enabled">Włączone</string>
+    <string name="permission_disabled">Dotknij, aby włączyć</string>
+    <string name="permission_granted">Przyznane</string>
+    <string name="permission_required">Dotknij, aby przyznać</string>
+
+    <!-- Accessibility -->
+    <string name="accessibility_service_label">Asystent Wyświetlacza</string>
+    <string name="accessibility_service_description">Ta usługa pomaga w interakcji z ekranem i asystowaniu wyświetlacza. Monitoruje zawartość ekranu, aby zapewnić ulepszone funkcje użyteczności.</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_accessibility_required">Proszę włączyć usługę ułatwień dostępu</string>
+    <string name="toast_overlay_required">Proszę przyznać uprawnienia nakładki</string>
+    <string name="toast_screen_capture_denied">Odmówiono uprawnień do przechwytywania ekranu</string>
+    <string name="toast_init_failed">Nie udało się zainicjować silnika automatyzacji</string>
+    <string name="toast_automation_started">Automatyzacja uruchomiona</string>
+    <string name="toast_automation_stopped">Automatyzacja zatrzymana</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Ustawienia</string>
+    <string name="settings_card_priority">Priorytet Wyboru Kart</string>
+    <string name="settings_np_usage">Użycie Noble Phantasm</string>
+    <string name="settings_skill_timing">Czas Umiejętności</string>
+
+    <!-- UI Labels -->
+    <string name="label_permissions">Uprawnienia</string>
+    <string name="label_session_stats">Statystyki Sesji</string>
+    <string name="label_battles">Bitwy</string>
+    <string name="label_runtime">Czas Działania</string>
+    <string name="label_nps_used">Użyte NP</string>
+    <string name="label_accessibility_service">Usługa Ułatwień Dostępu</string>
+    <string name="label_display_overlay">Nakładka Wyświetlacza</string>
+
+    <!-- Security -->
+    <string name="security_notice">Informacja o Bezpieczeństwie</string>
+    <string name="security_understood">Rozumiem</string>
+    <string name="security_dont_show">Nie pokazuj ponownie</string>
+</resources>

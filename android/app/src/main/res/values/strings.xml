@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- English (Default) -->
+    <string name="app_name">SHEBA</string>
+    <string name="app_subtitle">AI-Powered FGO Automation</string>
+    <string name="app_version">Sheba v0.1.0 • Lens of the Future</string>
+
+    <!-- Status -->
+    <string name="status_idle">Awaiting Command</string>
+    <string name="status_running">Automation Active</string>
+    <string name="status_paused">Paused</string>
+    <string name="status_error">Error Occurred</string>
+
+    <!-- Buttons -->
+    <string name="start_automation">Start Automation</string>
+    <string name="stop_automation">Stop Automation</string>
+
+    <!-- Permissions -->
+    <string name="permission_enabled">Enabled</string>
+    <string name="permission_disabled">Tap to enable</string>
+    <string name="permission_granted">Granted</string>
+    <string name="permission_required">Tap to grant</string>
+
+    <!-- Accessibility (using generic names to avoid detection) -->
+    <string name="accessibility_service_label">Display Helper</string>
+    <string name="accessibility_service_description">This service helps with screen interaction and display assistance. It monitors screen content to provide enhanced usability features.</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_accessibility_required">Please enable accessibility service</string>
+    <string name="toast_overlay_required">Please grant overlay permission</string>
+    <string name="toast_screen_capture_denied">Screen capture permission denied</string>
+    <string name="toast_init_failed">Failed to initialize automation engine</string>
+    <string name="toast_automation_started">Automation started</string>
+    <string name="toast_automation_stopped">Automation stopped</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_card_priority">Card Selection Priority</string>
+    <string name="settings_np_usage">Noble Phantasm Usage</string>
+    <string name="settings_skill_timing">Skill Timing</string>
+
+    <!-- UI Labels -->
+    <string name="label_permissions">Permissions</string>
+    <string name="label_session_stats">Session Statistics</string>
+    <string name="label_battles">Battles</string>
+    <string name="label_runtime">Runtime</string>
+    <string name="label_nps_used">NPs Used</string>
+    <string name="label_accessibility_service">Accessibility Service</string>
+    <string name="label_display_overlay">Display Overlay</string>
+
+    <!-- Security -->
+    <string name="security_notice">Security Notice</string>
+    <string name="security_understood">Understood</string>
+    <string name="security_dont_show">Don\'t show again</string>
+
+    <!-- Overlay -->
+    <string name="close_overlay">Close Overlay</string>
+
+    <!-- Card Types -->
+    <string name="card_type_buster">Buster</string>
+    <string name="card_type_arts">Arts</string>
+    <string name="card_type_quick">Quick</string>
+
+    <!-- Battle Terms -->
+    <string name="noble_phantasm">Noble Phantasm</string>
+    <string name="command_cards">Command Cards</string>
+    <string name="enemy">Enemy</string>
+    <string name="servant">Servant</string>
+    <string name="master">Master</string>
+    <string name="skill">Skill</string>
+
+    <!-- Session Statistics -->
+    <string name="stats_battles_completed">Battles Completed</string>
+    <string name="stats_total_runtime">Total Runtime</string>
+    <string name="stats_nps_fired">NPs Fired</string>
+    <string name="stats_skills_used">Skills Used</string>
+    <string name="stats_cards_selected">Cards Selected</string>
+
+    <!-- Errors -->
+    <string name="error_no_fgo_detected">FGO not detected on screen</string>
+    <string name="error_battle_failed">Battle automation failed</string>
+    <string name="error_recognition_failed">Screen recognition failed</string>
+
+    <!-- Tips -->
+    <string name="tip_enable_accessibility">Enable accessibility service in Settings</string>
+    <string name="tip_grant_overlay">Grant overlay permission to show controls</string>
+    <string name="tip_start_fgo_first">Start FGO before enabling automation</string>
+
+    <!-- About -->
+    <string name="about_title">About Sheba</string>
+    <string name="about_description">AI-powered automation tool for Fate/Grand Order. Uses machine learning for intelligent card selection, NP timing, and skill usage.</string>
+    <string name="about_disclaimer">This tool is for educational purposes. Use responsibly and in accordance with game terms of service.</string>
+
+    <!-- Language Names (for language selector) -->
+    <string name="language_en">English</string>
+    <string name="language_ja">日本語</string>
+    <string name="language_zh_cn">简体中文</string>
+    <string name="language_zh_tw">繁體中文</string>
+    <string name="language_ko">한국어</string>
+    <string name="language_es">Español</string>
+    <string name="language_fr">Français</string>
+    <string name="language_de">Deutsch</string>
+    <string name="language_pt_br">Português (Brasil)</string>
+    <string name="language_ru">Русский</string>
+    <string name="language_it">Italiano</string>
+    <string name="language_id">Bahasa Indonesia</string>
+    <string name="language_th">ภาษาไทย</string>
+    <string name="language_vi">Tiếng Việt</string>
+    <string name="language_ar">العربية</string>
+    <string name="language_pl">Polski</string>
+    <string name="language_tr">Türkçe</string>
+    <string name="language_nl">Nederlands</string>
+</resources>

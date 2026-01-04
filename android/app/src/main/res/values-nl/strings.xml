@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dutch / Nederlands -->
+    <string name="app_name">SHEBA</string>
+    <string name="app_subtitle">AI-aangedreven FGO-automatisering</string>
+    <string name="app_version">Sheba v0.1.0 • Lens van de Toekomst</string>
+
+    <!-- Status -->
+    <string name="status_idle">Wachten op Commando</string>
+    <string name="status_running">Automatisering Actief</string>
+    <string name="status_paused">Gepauzeerd</string>
+    <string name="status_error">Fout Opgetreden</string>
+
+    <!-- Buttons -->
+    <string name="start_automation">Start Automatisering</string>
+    <string name="stop_automation">Stop Automatisering</string>
+
+    <!-- Permissions -->
+    <string name="permission_enabled">Ingeschakeld</string>
+    <string name="permission_disabled">Tik om in te schakelen</string>
+    <string name="permission_granted">Verleend</string>
+    <string name="permission_required">Tik om te verlenen</string>
+
+    <!-- Accessibility -->
+    <string name="accessibility_service_label">Scherm Assistent</string>
+    <string name="accessibility_service_description">Deze service helpt bij scherminteractie en weergave-assistentie. Het bewaakt de scherminhoud om verbeterde bruikbaarheidsfuncties te bieden.</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_accessibility_required">Schakel de toegankelijkheidsservice in</string>
+    <string name="toast_overlay_required">Verleen overlay-toestemming</string>
+    <string name="toast_screen_capture_denied">Schermopname-toestemming geweigerd</string>
+    <string name="toast_init_failed">Kon automatiseringsengine niet initialiseren</string>
+    <string name="toast_automation_started">Automatisering gestart</string>
+    <string name="toast_automation_stopped">Automatisering gestopt</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Instellingen</string>
+    <string name="settings_card_priority">Kaart Selectie Prioriteit</string>
+    <string name="settings_np_usage">Noble Phantasm Gebruik</string>
+    <string name="settings_skill_timing">Vaardigheid Timing</string>
+
+    <!-- UI Labels -->
+    <string name="label_permissions">Toestemmingen</string>
+    <string name="label_session_stats">Sessie Statistieken</string>
+    <string name="label_battles">Gevechten</string>
+    <string name="label_runtime">Looptijd</string>
+    <string name="label_nps_used">NPs Gebruikt</string>
+    <string name="label_accessibility_service">Toegankelijkheidsservice</string>
+    <string name="label_display_overlay">Scherm Overlay</string>
+
+    <!-- Security -->
+    <string name="security_notice">Beveiligingsmelding</string>
+    <string name="security_understood">Begrepen</string>
+    <string name="security_dont_show">Niet meer tonen</string>
+</resources>

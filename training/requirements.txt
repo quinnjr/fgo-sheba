@@ -1,0 +1,27 @@
+# FGO Sheba Model Training Requirements
+
+# Deep Learning
+torch>=2.0.0
+torchvision>=0.15.0
+onnx>=1.14.0
+onnxruntime>=1.15.0
+
+# Data Processing
+numpy>=1.24.0
+pillow>=10.0.0
+opencv-python>=4.8.0
+scikit-learn>=1.3.0
+
+# Visualization
+matplotlib>=3.7.0
+tqdm>=4.65.0
+
+# Data Augmentation
+albumentations>=1.3.0
+
+# APK Download & Extraction
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+
+# Unity Asset Extraction (optional)
+# UnityPy>=1.9.0

@@ -1,0 +1,27 @@
+# Git LFS tracking for large binary files
+
+# ONNX models (for ML inference)
+*.onnx filter=lfs diff=lfs merge=lfs -text
+
+# PyTorch models
+*.pt filter=lfs diff=lfs merge=lfs -text
+*.pth filter=lfs diff=lfs merge=lfs -text
+
+# TensorFlow models
+*.pb filter=lfs diff=lfs merge=lfs -text
+*.h5 filter=lfs diff=lfs merge=lfs -text
+
+# Generic model binaries
+*.bin filter=lfs diff=lfs merge=lfs -text
+
+# Android native libraries (if committed)
+*.so filter=lfs diff=lfs merge=lfs -text
+
+# Large image datasets (if any are committed)
+*.png filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+
+# APK files (if any are committed for testing)
+*.apk filter=lfs diff=lfs merge=lfs -text
+*.aab filter=lfs diff=lfs merge=lfs -text

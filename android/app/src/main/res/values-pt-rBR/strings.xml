@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Portuguese (Brazil) / Português (Brasil) -->
+    <string name="app_name">SHEBA</string>
+    <string name="app_subtitle">Automação FGO com IA</string>
+    <string name="app_version">Sheba v0.1.0 • Lente do Futuro</string>
+
+    <!-- Status -->
+    <string name="status_idle">Aguardando Comando</string>
+    <string name="status_running">Automação Ativa</string>
+    <string name="status_paused">Pausado</string>
+    <string name="status_error">Erro Ocorrido</string>
+
+    <!-- Buttons -->
+    <string name="start_automation">Iniciar Automação</string>
+    <string name="stop_automation">Parar Automação</string>
+
+    <!-- Permissions -->
+    <string name="permission_enabled">Habilitado</string>
+    <string name="permission_disabled">Toque para habilitar</string>
+    <string name="permission_granted">Concedido</string>
+    <string name="permission_required">Toque para conceder</string>
+
+    <!-- Accessibility -->
+    <string name="accessibility_service_label">Assistente de Tela</string>
+    <string name="accessibility_service_description">Este serviço ajuda na interação com a tela e assistência de exibição. Ele monitora o conteúdo da tela para fornecer recursos de usabilidade aprimorados.</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_accessibility_required">Por favor, habilite o serviço de acessibilidade</string>
+    <string name="toast_overlay_required">Por favor, conceda permissão de sobreposição</string>
+    <string name="toast_screen_capture_denied">Permissão de captura de tela negada</string>
+    <string name="toast_init_failed">Falha ao inicializar o motor de automação</string>
+    <string name="toast_automation_started">Automação iniciada</string>
+    <string name="toast_automation_stopped">Automação parada</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Configurações</string>
+    <string name="settings_card_priority">Prioridade de Seleção de Cartas</string>
+    <string name="settings_np_usage">Uso de Noble Phantasm</string>
+    <string name="settings_skill_timing">Tempo de Habilidades</string>
+
+    <!-- UI Labels -->
+    <string name="label_permissions">Permissões</string>
+    <string name="label_session_stats">Estatísticas da Sessão</string>
+    <string name="label_battles">Batalhas</string>
+    <string name="label_runtime">Tempo de Execução</string>
+    <string name="label_nps_used">NPs Usados</string>
+    <string name="label_accessibility_service">Serviço de Acessibilidade</string>
+    <string name="label_display_overlay">Sobreposição de Tela</string>
+
+    <!-- Security -->
+    <string name="security_notice">Aviso de Segurança</string>
+    <string name="security_understood">Entendido</string>
+    <string name="security_dont_show">Não mostrar novamente</string>
+</resources>

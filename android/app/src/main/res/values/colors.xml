@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- FGO Sheba Theme - Mystical Dark with Gold Accents -->
+
+    <!-- Primary Colors - Deep Cosmic Blue -->
+    <color name="primary">#FF1A1A2E</color>
+    <color name="primary_dark">#FF0F0F1A</color>
+    <color name="primary_light">#FF252542</color>
+
+    <!-- Accent Colors - Noble Gold -->
+    <color name="accent_gold">#FFD4AF37</color>
+    <color name="accent_gold_light">#FFFFD700</color>
+    <color name="accent_gold_dark">#FFB8860B</color>
+
+    <!-- Secondary - Mystic Purple -->
+    <color name="secondary_purple">#FF6B4C9A</color>
+    <color name="secondary_purple_light">#FF8B6BB8</color>
+    <color name="secondary_purple_dark">#FF4A3570</color>
+
+    <!-- Command Card Colors -->
+    <color name="card_buster">#FFCC3333</color>
+    <color name="card_arts">#FF3366CC</color>
+    <color name="card_quick">#FF33CC66</color>
+    <color name="card_np">#FFFFD700</color>
+
+    <!-- Status Colors -->
+    <color name="status_success">#FF4CAF50</color>
+    <color name="status_warning">#FFFFC107</color>
+    <color name="status_error">#FFF44336</color>
+    <color name="status_info">#FF2196F3</color>
+
+    <!-- Surface Colors -->
+    <color name="surface_dark">#FF16162A</color>
+    <color name="surface_card">#FF1E1E3A</color>
+    <color name="surface_elevated">#FF262650</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#FFFFFFFF</color>
+    <color name="text_secondary">#B3FFFFFF</color>
+    <color name="text_hint">#66FFFFFF</color>
+    <color name="text_gold">#FFD4AF37</color>
+
+    <!-- Gradients (for programmatic use) -->
+    <color name="gradient_start">#FF0F0F1A</color>
+    <color name="gradient_mid">#FF1A1A2E</color>
+    <color name="gradient_end">#FF252542</color>
+
+    <!-- Glow Effects -->
+    <color name="glow_gold">#40D4AF37</color>
+    <color name="glow_purple">#406B4C9A</color>
+    <color name="glow_blue">#403366CC</color>
+
+    <!-- Legacy support -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

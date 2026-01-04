@@ -1,0 +1,5 @@
+# ONNX models directory
+# Place trained models here:
+# - card_classifier.onnx
+# - servant_detector.onnx
+# - ui_state.onnx

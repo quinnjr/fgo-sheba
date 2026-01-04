@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- French / Français -->
+    <string name="app_name">SHEBA</string>
+    <string name="app_subtitle">Automatisation FGO par IA</string>
+    <string name="app_version">Sheba v0.1.0 • Lentille du Futur</string>
+
+    <!-- Status -->
+    <string name="status_idle">En Attente</string>
+    <string name="status_running">Automatisation Active</string>
+    <string name="status_paused">En Pause</string>
+    <string name="status_error">Erreur Survenue</string>
+
+    <!-- Buttons -->
+    <string name="start_automation">Démarrer l\'Automatisation</string>
+    <string name="stop_automation">Arrêter l\'Automatisation</string>
+
+    <!-- Permissions -->
+    <string name="permission_enabled">Activé</string>
+    <string name="permission_disabled">Appuyez pour activer</string>
+    <string name="permission_granted">Accordé</string>
+    <string name="permission_required">Appuyez pour accorder</string>
+
+    <!-- Accessibility -->
+    <string name="accessibility_service_label">Assistant d\'Affichage</string>
+    <string name="accessibility_service_description">Ce service aide à l\'interaction avec l\'écran et à l\'assistance d\'affichage. Il surveille le contenu de l\'écran pour fournir des fonctionnalités d\'utilisabilité améliorées.</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_accessibility_required">Veuillez activer le service d\'accessibilité</string>
+    <string name="toast_overlay_required">Veuillez accorder la permission de superposition</string>
+    <string name="toast_screen_capture_denied">Permission de capture d\'écran refusée</string>
+    <string name="toast_init_failed">Échec de l\'initialisation du moteur d\'automatisation</string>
+    <string name="toast_automation_started">Automatisation démarrée</string>
+    <string name="toast_automation_stopped">Automatisation arrêtée</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Paramètres</string>
+    <string name="settings_card_priority">Priorité de Sélection des Cartes</string>
+    <string name="settings_np_usage">Utilisation du Noble Phantasm</string>
+    <string name="settings_skill_timing">Timing des Compétences</string>
+
+    <!-- UI Labels -->
+    <string name="label_permissions">Permissions</string>
+    <string name="label_session_stats">Statistiques de Session</string>
+    <string name="label_battles">Combats</string>
+    <string name="label_runtime">Durée d\'Exécution</string>
+    <string name="label_nps_used">NPs Utilisés</string>
+    <string name="label_accessibility_service">Service d\'Accessibilité</string>
+    <string name="label_display_overlay">Superposition d\'Affichage</string>
+
+    <!-- Security -->
+    <string name="security_notice">Avis de Sécurité</string>
+    <string name="security_understood">Compris</string>
+    <string name="security_dont_show">Ne plus afficher</string>
+</resources>

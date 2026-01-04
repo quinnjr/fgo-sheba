@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Vietnamese / Tiếng Việt -->
+    <string name="app_name">SHEBA</string>
+    <string name="app_subtitle">Tự Động Hóa FGO Bằng AI</string>
+    <string name="app_version">Sheba v0.1.0 • Thấu Kính Tương Lai</string>
+
+    <!-- Status -->
+    <string name="status_idle">Đang Chờ Lệnh</string>
+    <string name="status_running">Tự Động Hóa Đang Chạy</string>
+    <string name="status_paused">Tạm Dừng</string>
+    <string name="status_error">Đã Xảy Ra Lỗi</string>
+
+    <!-- Buttons -->
+    <string name="start_automation">Bắt Đầu Tự Động Hóa</string>
+    <string name="stop_automation">Dừng Tự Động Hóa</string>
+
+    <!-- Permissions -->
+    <string name="permission_enabled">Đã Bật</string>
+    <string name="permission_disabled">Nhấn để bật</string>
+    <string name="permission_granted">Đã Cấp</string>
+    <string name="permission_required">Nhấn để cấp quyền</string>
+
+    <!-- Accessibility -->
+    <string name="accessibility_service_label">Trợ Lý Hiển Thị</string>
+    <string name="accessibility_service_description">Dịch vụ này hỗ trợ tương tác màn hình và hiển thị. Nó giám sát nội dung màn hình để cung cấp các tính năng nâng cao trải nghiệm người dùng.</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_accessibility_required">Vui lòng bật dịch vụ trợ năng</string>
+    <string name="toast_overlay_required">Vui lòng cấp quyền hiển thị chồng</string>
+    <string name="toast_screen_capture_denied">Quyền chụp màn hình bị từ chối</string>
+    <string name="toast_init_failed">Khởi tạo engine tự động hóa thất bại</string>
+    <string name="toast_automation_started">Đã bắt đầu tự động hóa</string>
+    <string name="toast_automation_stopped">Đã dừng tự động hóa</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Cài Đặt</string>
+    <string name="settings_card_priority">Ưu Tiên Chọn Thẻ</string>
+    <string name="settings_np_usage">Sử Dụng Noble Phantasm</string>
+    <string name="settings_skill_timing">Thời Điểm Kỹ Năng</string>
+
+    <!-- UI Labels -->
+    <string name="label_permissions">Quyền</string>
+    <string name="label_session_stats">Thống Kê Phiên</string>
+    <string name="label_battles">Trận Chiến</string>
+    <string name="label_runtime">Thời Gian Chạy</string>
+    <string name="label_nps_used">NP Đã Dùng</string>
+    <string name="label_accessibility_service">Dịch Vụ Trợ Năng</string>
+    <string name="label_display_overlay">Hiển Thị Chồng</string>
+
+    <!-- Security -->
+    <string name="security_notice">Thông Báo Bảo Mật</string>
+    <string name="security_understood">Đã Hiểu</string>
+    <string name="security_dont_show">Không hiển thị lại</string>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Chinese Simplified / 简体中文 -->
+    <string name="app_name">示巴</string>
+    <string name="app_subtitle">AI驱动的FGO自动化工具</string>
+    <string name="app_version">示巴 v0.1.0 • 洞察未来之镜</string>
+
+    <!-- Status -->
+    <string name="status_idle">等待命令</string>
+    <string name="status_running">自动化运行中</string>
+    <string name="status_paused">已暂停</string>
+    <string name="status_error">发生错误</string>
+
+    <!-- Buttons -->
+    <string name="start_automation">开始自动化</string>
+    <string name="stop_automation">停止自动化</string>
+
+    <!-- Permissions -->
+    <string name="permission_enabled">已启用</string>
+    <string name="permission_disabled">点击启用</string>
+    <string name="permission_granted">已授权</string>
+    <string name="permission_required">点击授权</string>
+
+    <!-- Accessibility -->
+    <string name="accessibility_service_label">显示助手</string>
+    <string name="accessibility_service_description">此服务帮助屏幕交互和显示辅助。它监控屏幕内容以提供增强的可用性功能。</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_accessibility_required">请启用无障碍服务</string>
+    <string name="toast_overlay_required">请授予悬浮窗权限</string>
+    <string name="toast_screen_capture_denied">屏幕录制权限被拒绝</string>
+    <string name="toast_init_failed">自动化引擎初始化失败</string>
+    <string name="toast_automation_started">自动化已启动</string>
+    <string name="toast_automation_stopped">自动化已停止</string>
+
+    <!-- Settings -->
+    <string name="settings_title">设置</string>
+    <string name="settings_card_priority">指令卡选择优先级</string>
+    <string name="settings_np_usage">宝具使用设置</string>
+    <string name="settings_skill_timing">技能释放时机</string>
+
+    <!-- UI Labels -->
+    <string name="label_permissions">权限</string>
+    <string name="label_session_stats">本次统计</string>
+    <string name="label_battles">战斗次数</string>
+    <string name="label_runtime">运行时间</string>
+    <string name="label_nps_used">宝具次数</string>
+    <string name="label_accessibility_service">无障碍服务</string>
+    <string name="label_display_overlay">悬浮窗显示</string>
+
+    <!-- Security -->
+    <string name="security_notice">安全提示</string>
+    <string name="security_understood">知道了</string>
+    <string name="security_dont_show">不再显示</string>
+</resources>

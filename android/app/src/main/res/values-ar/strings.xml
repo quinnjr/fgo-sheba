@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Arabic / العربية -->
+    <string name="app_name">شيبا</string>
+    <string name="app_subtitle">أتمتة FGO بالذكاء الاصطناعي</string>
+    <string name="app_version">شيبا v0.1.0 • عدسة المستقبل</string>
+
+    <!-- Status -->
+    <string name="status_idle">في انتظار الأوامر</string>
+    <string name="status_running">الأتمتة نشطة</string>
+    <string name="status_paused">متوقف مؤقتاً</string>
+    <string name="status_error">حدث خطأ</string>
+
+    <!-- Buttons -->
+    <string name="start_automation">بدء الأتمتة</string>
+    <string name="stop_automation">إيقاف الأتمتة</string>
+
+    <!-- Permissions -->
+    <string name="permission_enabled">مُفعّل</string>
+    <string name="permission_disabled">انقر للتفعيل</string>
+    <string name="permission_granted">ممنوح</string>
+    <string name="permission_required">انقر للمنح</string>
+
+    <!-- Accessibility -->
+    <string name="accessibility_service_label">مساعد العرض</string>
+    <string name="accessibility_service_description">تساعد هذه الخدمة في التفاعل مع الشاشة ومساعدة العرض. تراقب محتوى الشاشة لتوفير ميزات سهولة الاستخدام المحسّنة.</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_accessibility_required">يرجى تفعيل خدمة إمكانية الوصول</string>
+    <string name="toast_overlay_required">يرجى منح إذن التراكب</string>
+    <string name="toast_screen_capture_denied">تم رفض إذن التقاط الشاشة</string>
+    <string name="toast_init_failed">فشل في تهيئة محرك الأتمتة</string>
+    <string name="toast_automation_started">بدأت الأتمتة</string>
+    <string name="toast_automation_stopped">توقفت الأتمتة</string>
+
+    <!-- Settings -->
+    <string name="settings_title">الإعدادات</string>
+    <string name="settings_card_priority">أولوية اختيار البطاقات</string>
+    <string name="settings_np_usage">استخدام Noble Phantasm</string>
+    <string name="settings_skill_timing">توقيت المهارات</string>
+
+    <!-- UI Labels -->
+    <string name="label_permissions">الأذونات</string>
+    <string name="label_session_stats">إحصائيات الجلسة</string>
+    <string name="label_battles">المعارك</string>
+    <string name="label_runtime">وقت التشغيل</string>
+    <string name="label_nps_used">NP المستخدمة</string>
+    <string name="label_accessibility_service">خدمة إمكانية الوصول</string>
+    <string name="label_display_overlay">تراكب العرض</string>
+
+    <!-- Security -->
+    <string name="security_notice">إشعار أمني</string>
+    <string name="security_understood">مفهوم</string>
+    <string name="security_dont_show">عدم الإظهار مجدداً</string>
+</resources>
