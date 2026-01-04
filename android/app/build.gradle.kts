@@ -42,6 +42,14 @@ android {
         viewBinding = true
     }
 
+    lint {
+        // Allow missing translations during development
+        disable += "MissingTranslation"
+        // Treat warnings as warnings, not errors
+        abortOnError = true
+        warningsAsErrors = false
+    }
+
     sourceSets {
         getByName("main") {
             jniLibs.srcDirs("src/main/jniLibs")
