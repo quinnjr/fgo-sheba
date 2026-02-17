@@ -1,0 +1,52 @@
+# FGO Sheba
+
+> AI-powered Fate/Grand Order automation for Android
+
+FGO Sheba is an Android application that automates Fate/Grand Order battles using machine learning. It features an AI battle engine for intelligent card selection and Noble Phantasm timing, an ONNX-based vision system for real-time game state detection, and a stealth layer that simulates human behavior to avoid detection. The app is built with a Rust core library bridged to a Kotlin Android frontend via JNI, and supports 17 languages.
+
+## Links
+
+- [Documentation](https://quinnjr.github.io/fgo-sheba/)
+- [GitHub Repository](https://github.com/quinnjr/fgo-sheba)
+
+## Key Features
+
+- AI battle engine with ML-powered command card chain optimization
+- Smart Noble Phantasm timing based on enemy HP and wave analysis
+- Automatic skill usage with proper timing and targeting
+- ONNX-based vision system for real-time screen recognition and card classification
+- Human behavior simulation with randomized timing and tap positions
+- FGO-inspired dark cosmic UI with gold accents and smooth animations
+- Real-time session statistics (battle count, runtime, NP usage)
+- 17 languages supported
+- Supports FGO JP, NA, KR, and TW versions
+
+## Requirements
+
+- Android 8.0+ (API 26+)
+- Fate/Grand Order (JP, NA, KR, or TW version)
+- ~100MB storage for ML models
+
+## Installation
+
+Download the latest APK from the [Releases](https://github.com/quinnjr/fgo-sheba/releases) page, or build from source:
+
+```bash
+git clone https://github.com/quinnjr/fgo-sheba.git
+cd fgo-sheba
+
+# Build Rust library for Android
+cargo build --release --target aarch64-linux-android
+
+# Build Android APK
+cd android
+./gradlew assembleRelease
+```
+
+## Quick Start
+
+1. Install the APK on your Android device
+2. Grant permissions: enable "Display Helper" in Accessibility Settings and grant overlay permission
+3. Launch FGO and navigate to a battle quest
+4. Start automation from the Sheba app
+5. Monitor via the floating overlay control
