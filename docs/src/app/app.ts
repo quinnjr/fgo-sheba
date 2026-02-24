@@ -1,5 +1,4 @@
 import { Component, OnInit, signal, AfterViewInit, ElementRef, ViewChild, HostListener, OnDestroy } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import {
   faDownload,
@@ -43,7 +42,7 @@ interface Particle {
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, FontAwesomeModule],
+  imports: [FontAwesomeModule],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
