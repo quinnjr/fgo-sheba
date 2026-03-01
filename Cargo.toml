@@ -24,7 +24,7 @@ desktop-ml = ["ort"]  # Enable ONNX Runtime for desktop builds
 ort = { version = "2.0.0-rc.10", optional = true }
 image = "0.25"
 imageproc = "0.25"
-ndarray = "0.16"
+ndarray = "0.17"
 
 # Android
 jni = "0.21"
