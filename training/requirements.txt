@@ -3,7 +3,7 @@
 # Deep Learning
 torch>=2.0.0
 torchvision>=0.15.0
-onnx>=1.14.0
+onnx>=1.21.0
 onnxruntime>=1.15.0
 
 # Data Processing
