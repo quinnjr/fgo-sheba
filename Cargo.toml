@@ -23,7 +23,7 @@ desktop-ml = ["ort"]  # Enable ONNX Runtime for desktop builds
 # ML/Vision (ort is optional - not available for Android)
 ort = { version = "2.0.0-rc.10", optional = true }
 image = "0.25"
-imageproc = "0.25"
+imageproc = "0.26"
 ndarray = "0.16"
 
 # Android
