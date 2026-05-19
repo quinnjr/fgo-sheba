@@ -27,7 +27,7 @@ imageproc = "0.25"
 ndarray = "0.16"
 
 # Android
-jni = "0.21"
+jni = "0.22"
 log = "0.4"
 
 # Core
