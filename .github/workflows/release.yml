@@ -19,7 +19,7 @@ jobs:
     name: Build Release APK
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           lfs: true
 
@@ -128,7 +128,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Download APK artifact
         uses: actions/download-artifact@v8
