@@ -26,8 +26,7 @@ import {
 import {
   faGithub,
   faRust,
-  faAndroid,
-  faPatreon
+  faAndroid
 } from '@fortawesome/free-brands-svg-icons';
 
 interface Particle {
@@ -87,8 +86,7 @@ export class App implements OnInit, AfterViewInit, OnDestroy {
       // Brand icons
       faGithub,
       faRust,
-      faAndroid,
-      faPatreon
+      faAndroid
     );
   }
 

@@ -218,17 +218,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 💖 Support
-
-If you find this project useful, consider:
-
-[![Patreon](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://www.patreon.com/c/PegasusHeavyIndustries)
-
----
-
 <div align="center">
 
-**Built with ❤️ by [Pegasus Heavy Industries](https://github.com/PegasusHeavyIndustries)**
+**Built with ❤️ by [Joseph R. Quinn](https://github.com/quinnjr)**
 
 *"The future you see is the future you create."*
 
